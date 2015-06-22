@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-xY-ZeX">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-xY-ZeX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wXo-xY-ZeX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pfs-kX-C8b"/>
+                            <constraint firstAttribute="trailing" secondItem="wXo-xY-ZeX" secondAttribute="trailing" id="kPj-l2-B7i"/>
+                            <constraint firstItem="wXo-xY-ZeX" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nj2-pa-h5N"/>
+                            <constraint firstItem="wXo-xY-ZeX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xRD-t7-w8Z"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="theMap" destination="wXo-xY-ZeX" id="djl-gH-SnY"/>
