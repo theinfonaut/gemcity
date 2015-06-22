@@ -10,15 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
-
 class ViewController: UIViewController {
 
     @IBOutlet weak var theMap: MKMapView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
     }
 
     override func didReceiveMemoryWarning() {

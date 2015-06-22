@@ -5,7 +5,11 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+	<string>DD31A2D7-75BB-4BAC-9B49-AC9FFD9F153E</string>
+=======
 	<string>EAFF2596-B1AC-4E89-8D05-89FE1F780957</string>
+>>>>>>> master
 	<key>IDESourceControlProjectName</key>
 	<string>Gem City Beta</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
