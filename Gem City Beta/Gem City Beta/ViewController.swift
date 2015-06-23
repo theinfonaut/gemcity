@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theMap: MKMapView!
 
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 200
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +30,12 @@ class ViewController: UIViewController {
         theMap.addAnnotations(alltrees)
         
         theMap.delegate = self
-        
+       
         // show trees on map
 //        let trees = Trees(treeid: "01010",
 //            planttype: "Eucalyptus sideroxylon :: Red Ironbark",
 //            coordinate: CLLocationCoordinate2D(latitude: 37.7392189485182, longitude: -122.377869364283))
 //        theMap.addAnnotation(trees)
-        
     }
 
     var alltrees = [Trees]()
@@ -56,13 +55,12 @@ class ViewController: UIViewController {
         // 3
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
             // 4
-            let jsonData = JSONValue.fromObject(jsonObject)?["data"]?.array {
-                for treesJSON in jsonData {
-                    if let treesJSON = treesJSON.array,
-                        // 5
-                        trees = Trees.fromJSON(treesJSON) {
-                            alltrees.append(trees)
-                }
+            let jsonArray = jsonObject["data"] as? [NSArray] {
+                for treesJSON in jsonArray
+                {
+                    if let trees = Trees.fromJSON(treesJSON) {
+                        alltrees.append(trees)
+                    }
             }
         }
     }
@@ -74,10 +72,4 @@ class ViewController: UIViewController {
     }
 
     
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-//    }
-
-
 }

@@ -26,23 +26,36 @@ class Trees: NSObject, MKAnnotation {
 //        return planttype
 //    }
     
-    class func fromJSON(json: [JSONValue]) -> Trees? {
+    class func fromJSON(json: NSArray) -> Trees? {
         // 1
+      
+        var latitude: Double? = nil
+        if let latString = json[23] as? NSString {
+            latitude = latString.doubleValue
+        }
+        
+        var longitude: Double? = nil
+        if let longString = json[24] as? NSString {
+            longitude = longString.doubleValue}
+        
         var treeid: String
-        if let treeidOrNil = json[16].string {
+        if let treeidOrNil = json[0] as? String {
             treeid = treeidOrNil
         } else {
             treeid = ""
         }
-        let planttype = json[12].string
         
-        // 2
-        let latitude = (json[18].string! as NSString).doubleValue
-        let longitude = (json[19].string! as NSString).doubleValue
-        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let planttype = json[10] as? String
         
-        // 3
-        return Trees(treeid: treeid, planttype: planttype!, coordinate: coordinate)
+        // location
+        
+        
+        if let latitude = latitude, longitude = longitude, planttype = planttype {
+            return Trees(treeid: treeid, planttype: planttype, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+        } else {
+        return nil
+        }
+        
     }
     
     // pinImage for all pins

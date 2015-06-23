@@ -15,6 +15,9 @@ extension ViewController: MKMapViewDelegate {
         if let annotation = annotation as? Trees {
             let identifier = "pin"
             var view: MKPinAnnotationView
+            //view = String
+            //view.image = UIImage(named: "")
+
             if let dequeuedView = theMap.dequeueReusableAnnotationViewWithIdentifier(identifier)
                 as? MKPinAnnotationView {
     // 2
@@ -29,6 +32,7 @@ extension ViewController: MKMapViewDelegate {
 
             }
             return view
+
         }
         return nil
     }
