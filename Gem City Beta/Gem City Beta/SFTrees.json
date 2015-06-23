@@ -1,0 +1,1647 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "337t-q2b4",
+      "name" : "Street Tree Map",
+      "attribution" : "San Francisco Department of Public Works",
+      "attributionLink" : "http://www.sfdpw.org",
+      "averageRating" : 0,
+      "category" : "City Infrastructure",
+      "createdAt" : 1351034170,
+      "description" : "List of dpw maintained street trees including: Planting date, species, and location",
+      "displayType" : "map",
+      "downloadCount" : 269,
+      "indexUpdatedAt" : 1433361363,
+      "licenseId" : "PDDL",
+      "moderationStatus" : true,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 11371001,
+      "publicationAppendEnabled" : true,
+      "publicationDate" : 1432222923,
+      "publicationGroup" : 434273,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1432222907,
+      "rowsUpdatedBy" : "rcpp-nrjq",
+      "tableId" : 2912304,
+      "totalTimesRated" : 0,
+      "viewCount" : 2049,
+      "viewLastModified" : 1408080847,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 204912724,
+        "name" : "TreeID",
+        "dataTypeName" : "number",
+        "fieldName" : "treeid",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4269451,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 86173,
+          "smallest" : "1",
+          "sum" : "4448590429",
+          "null" : 0,
+          "average" : "51623.94751256194",
+          "largest" : "111106",
+          "top" : [ {
+            "count" : 20,
+            "item" : "111072"
+          }, {
+            "count" : 19,
+            "item" : "111073"
+          }, {
+            "count" : 18,
+            "item" : "111074"
+          }, {
+            "count" : 17,
+            "item" : "111075"
+          }, {
+            "count" : 16,
+            "item" : "111077"
+          }, {
+            "count" : 15,
+            "item" : "111078"
+          }, {
+            "count" : 14,
+            "item" : "111079"
+          }, {
+            "count" : 13,
+            "item" : "111080"
+          }, {
+            "count" : 12,
+            "item" : "111081"
+          }, {
+            "count" : 11,
+            "item" : "111082"
+          }, {
+            "count" : 10,
+            "item" : "111084"
+          }, {
+            "count" : 9,
+            "item" : "111085"
+          }, {
+            "count" : 8,
+            "item" : "111086"
+          }, {
+            "count" : 7,
+            "item" : "111087"
+          }, {
+            "count" : 6,
+            "item" : "111088"
+          }, {
+            "count" : 5,
+            "item" : "111089"
+          }, {
+            "count" : 4,
+            "item" : "111090"
+          }, {
+            "count" : 3,
+            "item" : "111091"
+          }, {
+            "count" : 2,
+            "item" : "111092"
+          }, {
+            "count" : 1,
+            "item" : "111093"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912725,
+        "name" : "qLegalStatus",
+        "dataTypeName" : "text",
+        "fieldName" : "qlegalstatus",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269452,
+        "width" : 244,
+        "cachedContents" : {
+          "non_null" : 86110,
+          "smallest" : "DPW Maintained",
+          "null" : 63,
+          "largest" : "Undocumented",
+          "top" : [ {
+            "count" : 20,
+            "item" : "DPW Maintained"
+          }, {
+            "count" : 19,
+            "item" : "Permitted Site"
+          }, {
+            "count" : 18,
+            "item" : "Landmark tree"
+          }, {
+            "count" : 17,
+            "item" : "Private"
+          }, {
+            "count" : 16,
+            "item" : "Significant Tree"
+          }, {
+            "count" : 15,
+            "item" : "Section 143"
+          }, {
+            "count" : 14,
+            "item" : "Undocumented"
+          }, {
+            "count" : 13,
+            "item" : "Property Tree"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912726,
+        "name" : "qSpecies",
+        "dataTypeName" : "text",
+        "fieldName" : "qspecies",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269453,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 86173,
+          "smallest" : " ::",
+          "null" : 0,
+          "largest" : "Zelkova serrata :: Sawleaf Zelkova",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Platanus x hispanica :: Sycamore: London Plane"
+          }, {
+            "count" : 19,
+            "item" : "Tristaniopsis laurina :: Swamp Myrtle"
+          }, {
+            "count" : 18,
+            "item" : "Maytenus boaria :: Mayten"
+          }, {
+            "count" : 17,
+            "item" : "Lophostemon confertus :: Brisbane Box"
+          }, {
+            "count" : 16,
+            "item" : "Corymbia ficifolia :: Red Flowering Gum"
+          }, {
+            "count" : 15,
+            "item" : "Magnolia grandiflora :: Southern Magnolia"
+          }, {
+            "count" : 14,
+            "item" : "Metrosideros excelsa :: New Zealand Xmas Tree"
+          }, {
+            "count" : 13,
+            "item" : "Pittosporum undulatum :: Victorian Box"
+          }, {
+            "count" : 12,
+            "item" : "Ficus nitida :: Laurel Fig"
+          }, {
+            "count" : 11,
+            "item" : "Arbutus 'Marina' :: Hybrid Strawberry Tree"
+          }, {
+            "count" : 10,
+            "item" : "Tree(s) ::"
+          }, {
+            "count" : 9,
+            "item" : "Prunus serrulata :: Ornamental Cherry"
+          }, {
+            "count" : 8,
+            "item" : "Prunus cerasifera :: Cherry Plum"
+          }, {
+            "count" : 7,
+            "item" : "Eriobotrya deflexa :: Bronze Loquat"
+          }, {
+            "count" : 6,
+            "item" : "Prunus serrulata 'Kwanzan' :: Kwanzan Flowering Cherry"
+          }, {
+            "count" : 5,
+            "item" : "Acacia melanoxylon :: Blackwood Acacia"
+          }, {
+            "count" : 4,
+            "item" : "Pinus radiata :: Monterey Pine"
+          }, {
+            "count" : 3,
+            "item" : "Fraxinus oxycarpa 'Raywood' :: Raywood Ash"
+          }, {
+            "count" : 2,
+            "item" : "Ginkgo biloba :: Maidenhair Tree"
+          }, {
+            "count" : 1,
+            "item" : "Cupressus macrocarpa :: Monterey Cypress"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912727,
+        "name" : "qAddress",
+        "dataTypeName" : "text",
+        "fieldName" : "qaddress",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4564280,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 84662,
+          "smallest" : "0@ 14th ST Trainor St",
+          "null" : 1511,
+          "largest" : "9X Newhall St",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1600x 15TH ST"
+          }, {
+            "count" : 19,
+            "item" : "2x LILY ST"
+          }, {
+            "count" : 18,
+            "item" : "2999X TURK BLVD"
+          }, {
+            "count" : 17,
+            "item" : "300x GUERRERO ST"
+          }, {
+            "count" : 16,
+            "item" : "1000x GUERRERO ST"
+          }, {
+            "count" : 15,
+            "item" : "2X FREELON ST"
+          }, {
+            "count" : 14,
+            "item" : "1X WELSH ST"
+          }, {
+            "count" : 13,
+            "item" : "199x HAWTHORNE ST"
+          }, {
+            "count" : 12,
+            "item" : "800 INDIANA ST"
+          }, {
+            "count" : 11,
+            "item" : "77 FEDERAL ST"
+          }, {
+            "count" : 10,
+            "item" : "940 Filbert St"
+          }, {
+            "count" : 9,
+            "item" : "245x North Point St"
+          }, {
+            "count" : 8,
+            "item" : "771 Ashbury St"
+          }, {
+            "count" : 7,
+            "item" : "90x DOWNEY ST"
+          }, {
+            "count" : 6,
+            "item" : "150 15th St"
+          }, {
+            "count" : 5,
+            "item" : "400x BUCHANAN ST"
+          }, {
+            "count" : 4,
+            "item" : "2059X MARKET ST"
+          }, {
+            "count" : 3,
+            "item" : "1851 Bryant St"
+          }, {
+            "count" : 2,
+            "item" : "99x CAPP ST"
+          }, {
+            "count" : 1,
+            "item" : "1836 08TH AVE"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912728,
+        "name" : "SiteOrder",
+        "dataTypeName" : "number",
+        "fieldName" : "siteorder",
+        "position" : 5,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4269454,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 84803,
+          "smallest" : "-50",
+          "sum" : "372701",
+          "null" : 1370,
+          "average" : "4.394903482188130",
+          "largest" : "501",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1"
+          }, {
+            "count" : 19,
+            "item" : "2"
+          }, {
+            "count" : 18,
+            "item" : "4"
+          }, {
+            "count" : 17,
+            "item" : "5"
+          }, {
+            "count" : 16,
+            "item" : "6"
+          }, {
+            "count" : 15,
+            "item" : "3"
+          }, {
+            "count" : 14,
+            "item" : "7"
+          }, {
+            "count" : 13,
+            "item" : "8"
+          }, {
+            "count" : 12,
+            "item" : "9"
+          }, {
+            "count" : 11,
+            "item" : "10"
+          }, {
+            "count" : 10,
+            "item" : "11"
+          }, {
+            "count" : 9,
+            "item" : "12"
+          }, {
+            "count" : 8,
+            "item" : "13"
+          }, {
+            "count" : 7,
+            "item" : "14"
+          }, {
+            "count" : 6,
+            "item" : "15"
+          }, {
+            "count" : 5,
+            "item" : "16"
+          }, {
+            "count" : 4,
+            "item" : "17"
+          }, {
+            "count" : 3,
+            "item" : "18"
+          }, {
+            "count" : 2,
+            "item" : "19"
+          }, {
+            "count" : 1,
+            "item" : "20"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912729,
+        "name" : "qSiteInfo",
+        "dataTypeName" : "text",
+        "fieldName" : "qsiteinfo",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269455,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 86173,
+          "smallest" : " :",
+          "null" : 0,
+          "largest" : "unknown : Yard",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Median : Cutout"
+          }, {
+            "count" : 19,
+            "item" : "Sidewalk: Curb side : Cutout"
+          }, {
+            "count" : 18,
+            "item" : "Sidewalk: Curb side : Yard"
+          }, {
+            "count" : 17,
+            "item" : "Sidewalk: Property side : Cutout"
+          }, {
+            "count" : 16,
+            "item" : "Front Yard : Yard"
+          }, {
+            "count" : 15,
+            "item" : "Front Yard : Cutout"
+          }, {
+            "count" : 14,
+            "item" : "Unaccepted Street : Yard"
+          }, {
+            "count" : 13,
+            "item" : "Sidewalk: Property side : Yard"
+          }, {
+            "count" : 12,
+            "item" : "Sidewalk: Curb side : Pot"
+          }, {
+            "count" : 11,
+            "item" : "Back Yard : Yard"
+          }, {
+            "count" : 10,
+            "item" : "unknown : Cutout"
+          }, {
+            "count" : 9,
+            "item" : "unknown : Yard"
+          }, {
+            "count" : 8,
+            "item" : "Back Yard : Cutout"
+          }, {
+            "count" : 7,
+            "item" : "Sidewalk: Curb side :"
+          }, {
+            "count" : 6,
+            "item" : "Median :"
+          }, {
+            "count" : 5,
+            "item" : "Median : Hanging Pot"
+          }, {
+            "count" : 4,
+            "item" : "Sidewalk: Property side : Pot"
+          }, {
+            "count" : 3,
+            "item" : "Sidewalk: Property side :"
+          }, {
+            "count" : 2,
+            "item" : "Front Yard :"
+          }, {
+            "count" : 1,
+            "item" : " : Cutout"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912730,
+        "name" : "PlantType",
+        "dataTypeName" : "text",
+        "fieldName" : "planttype",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269456,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 86173,
+          "smallest" : "Landscaping",
+          "null" : 0,
+          "largest" : "Tree",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Tree"
+          }, {
+            "count" : 19,
+            "item" : "Landscaping"
+          }, {
+            "count" : 18,
+            "item" : "tree"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912731,
+        "name" : "qCaretaker",
+        "dataTypeName" : "text",
+        "fieldName" : "qcaretaker",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269457,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 86173,
+          "smallest" : "Arts Commission",
+          "null" : 0,
+          "largest" : "War Memorial",
+          "top" : [ {
+            "count" : 20,
+            "item" : "DPW"
+          }, {
+            "count" : 19,
+            "item" : "Private"
+          }, {
+            "count" : 18,
+            "item" : "Dept of Real Estate"
+          }, {
+            "count" : 17,
+            "item" : "Rec/Park"
+          }, {
+            "count" : 16,
+            "item" : "PUC"
+          }, {
+            "count" : 15,
+            "item" : "Port"
+          }, {
+            "count" : 14,
+            "item" : "Mayor Office of Housing"
+          }, {
+            "count" : 13,
+            "item" : "Fire Dept"
+          }, {
+            "count" : 12,
+            "item" : "Purchasing Dept"
+          }, {
+            "count" : 11,
+            "item" : "War Memorial"
+          }, {
+            "count" : 10,
+            "item" : "Arts Commission"
+          }, {
+            "count" : 9,
+            "item" : "Office of Mayor"
+          }, {
+            "count" : 8,
+            "item" : "Asian Arts Commission"
+          }, {
+            "count" : 7,
+            "item" : "City College"
+          }, {
+            "count" : 6,
+            "item" : "Public Library"
+          }, {
+            "count" : 5,
+            "item" : "Health Dept"
+          }, {
+            "count" : 4,
+            "item" : "Police Dept"
+          }, {
+            "count" : 3,
+            "item" : "MTA"
+          }, {
+            "count" : 2,
+            "item" : "SFUSD"
+          }, {
+            "count" : 1,
+            "item" : "DPW for City Agency"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912732,
+        "name" : "qCareAssistant",
+        "dataTypeName" : "text",
+        "fieldName" : "qcareassistant",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269458,
+        "width" : 268,
+        "cachedContents" : {
+          "non_null" : 23900,
+          "smallest" : "Arts Commission",
+          "null" : 62273,
+          "largest" : "SFUSD",
+          "top" : [ {
+            "count" : 20,
+            "item" : "DPW"
+          }, {
+            "count" : 19,
+            "item" : "FUF"
+          }, {
+            "count" : 18,
+            "item" : "Private"
+          }, {
+            "count" : 17,
+            "item" : "DPW for City Agency"
+          }, {
+            "count" : 16,
+            "item" : "SFUSD"
+          }, {
+            "count" : 15,
+            "item" : "Cleary Bros. Landscape"
+          }, {
+            "count" : 14,
+            "item" : "Rec/Park"
+          }, {
+            "count" : 13,
+            "item" : "MTA"
+          }, {
+            "count" : 12,
+            "item" : "Arts Commission"
+          }, {
+            "count" : 11,
+            "item" : "Port"
+          }, {
+            "count" : 10,
+            "item" : "Dept of Real Estate"
+          }, {
+            "count" : 9,
+            "item" : "Fire Dept"
+          }, {
+            "count" : 8,
+            "item" : "Housing Authority"
+          }, {
+            "count" : 7,
+            "item" : "City College"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912733,
+        "name" : "PlantDate",
+        "dataTypeName" : "calendar_date",
+        "fieldName" : "plantdate",
+        "position" : 10,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 4269459,
+        "width" : 208,
+        "cachedContents" : {
+          "non_null" : 59533,
+          "smallest" : "1955-09-19T00:00:00",
+          "null" : 26640,
+          "largest" : "2022-08-07T00:00:00",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2009-11-01T00:00:00"
+          }, {
+            "count" : 19,
+            "item" : "2014-11-12T00:00:00"
+          }, {
+            "count" : 18,
+            "item" : "2014-12-22T00:00:00"
+          }, {
+            "count" : 17,
+            "item" : "2014-12-23T00:00:00"
+          }, {
+            "count" : 16,
+            "item" : "2014-12-24T00:00:00"
+          }, {
+            "count" : 15,
+            "item" : "2014-12-29T00:00:00"
+          }, {
+            "count" : 14,
+            "item" : "2015-01-02T00:00:00"
+          }, {
+            "count" : 13,
+            "item" : "2014-12-30T00:00:00"
+          }, {
+            "count" : 12,
+            "item" : "2015-01-06T00:00:00"
+          }, {
+            "count" : 11,
+            "item" : "2015-01-09T00:00:00"
+          }, {
+            "count" : 10,
+            "item" : "2015-01-20T00:00:00"
+          }, {
+            "count" : 9,
+            "item" : "2015-01-22T00:00:00"
+          }, {
+            "count" : 8,
+            "item" : "2015-01-29T00:00:00"
+          }, {
+            "count" : 7,
+            "item" : "2015-02-05T00:00:00"
+          }, {
+            "count" : 6,
+            "item" : "2015-02-24T00:00:00"
+          }, {
+            "count" : 5,
+            "item" : "2015-02-27T00:00:00"
+          }, {
+            "count" : 4,
+            "item" : "2015-03-02T00:00:00"
+          }, {
+            "count" : 3,
+            "item" : "2015-03-03T00:00:00"
+          }, {
+            "count" : 2,
+            "item" : "2015-03-09T00:00:00"
+          }, {
+            "count" : 1,
+            "item" : "2015-03-12T00:00:00"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912734,
+        "name" : "DBH",
+        "dataTypeName" : "number",
+        "fieldName" : "dbh",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4269460,
+        "width" : 136,
+        "cachedContents" : {
+          "non_null" : 36383,
+          "smallest" : "0",
+          "sum" : "516187",
+          "null" : 49790,
+          "average" : "14.18758760959789",
+          "largest" : "1530",
+          "top" : [ {
+            "count" : 20,
+            "item" : "3"
+          }, {
+            "count" : 19,
+            "item" : "30"
+          }, {
+            "count" : 18,
+            "item" : "45"
+          }, {
+            "count" : 17,
+            "item" : "20"
+          }, {
+            "count" : 16,
+            "item" : "35"
+          }, {
+            "count" : 15,
+            "item" : "16"
+          }, {
+            "count" : 14,
+            "item" : "14"
+          }, {
+            "count" : 13,
+            "item" : "6"
+          }, {
+            "count" : 12,
+            "item" : "0"
+          }, {
+            "count" : 11,
+            "item" : "18"
+          }, {
+            "count" : 10,
+            "item" : "25"
+          }, {
+            "count" : 9,
+            "item" : "8"
+          }, {
+            "count" : 8,
+            "item" : "12"
+          }, {
+            "count" : 7,
+            "item" : "40"
+          }, {
+            "count" : 6,
+            "item" : "15"
+          }, {
+            "count" : 5,
+            "item" : "24"
+          }, {
+            "count" : 4,
+            "item" : "36"
+          }, {
+            "count" : 3,
+            "item" : "90"
+          }, {
+            "count" : 2,
+            "item" : "65"
+          }, {
+            "count" : 1,
+            "item" : "70"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912735,
+        "name" : "PlotSize",
+        "dataTypeName" : "text",
+        "fieldName" : "plotsize",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269461,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 45665,
+          "smallest" : "?",
+          "null" : 40508,
+          "largest" : "witin landscaping plot",
+          "top" : [ {
+            "count" : 20,
+            "item" : "3X3"
+          }, {
+            "count" : 19,
+            "item" : "4x4"
+          }, {
+            "count" : 18,
+            "item" : "3x3"
+          }, {
+            "count" : 17,
+            "item" : "4X4"
+          }, {
+            "count" : 16,
+            "item" : "2X3"
+          }, {
+            "count" : 15,
+            "item" : "3X4"
+          }, {
+            "count" : 14,
+            "item" : "2X2"
+          }, {
+            "count" : 13,
+            "item" : "6"
+          }, {
+            "count" : 12,
+            "item" : "5"
+          }, {
+            "count" : 11,
+            "item" : "2x2"
+          }, {
+            "count" : 10,
+            "item" : "8"
+          }, {
+            "count" : 9,
+            "item" : "20"
+          }, {
+            "count" : 8,
+            "item" : "3x4"
+          }, {
+            "count" : 7,
+            "item" : "10"
+          }, {
+            "count" : 6,
+            "item" : "60"
+          }, {
+            "count" : 5,
+            "item" : "40"
+          }, {
+            "count" : 4,
+            "item" : "6x6"
+          }, {
+            "count" : 3,
+            "item" : "5x5"
+          }, {
+            "count" : 2,
+            "item" : "2x3"
+          }, {
+            "count" : 1,
+            "item" : "15x280"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912736,
+        "name" : "PermitNotes",
+        "dataTypeName" : "text",
+        "fieldName" : "permitnotes",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 4269462,
+        "width" : 232,
+        "cachedContents" : {
+          "non_null" : 48190,
+          "smallest" : "1/24/2011: Wants to be on \"Do Not Prune\" list. C.Buck/DPW. Rock & Rose contracted. Will meet before to review scope of work each time.",
+          "null" : 37983,
+          "largest" : "unpermitted private planting on DPW-maintained street",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Permit Number 773822"
+          }, {
+            "count" : 19,
+            "item" : "Permit Number 774020"
+          }, {
+            "count" : 18,
+            "item" : "Permit Number 775060"
+          }, {
+            "count" : 17,
+            "item" : "Permit Number 774456"
+          }, {
+            "count" : 16,
+            "item" : "Permit Number 773313"
+          }, {
+            "count" : 15,
+            "item" : "Permit Number 770873"
+          }, {
+            "count" : 14,
+            "item" : "Permit Number 774536"
+          }, {
+            "count" : 13,
+            "item" : "Permit Number 775067"
+          }, {
+            "count" : 12,
+            "item" : "Permit Number 55966"
+          }, {
+            "count" : 11,
+            "item" : "Permit Number 775248"
+          }, {
+            "count" : 10,
+            "item" : "Permit Number 775124"
+          }, {
+            "count" : 9,
+            "item" : "Permit Number 774992"
+          }, {
+            "count" : 8,
+            "item" : "Permit Number 774750"
+          }, {
+            "count" : 7,
+            "item" : "Permit Number 775301"
+          }, {
+            "count" : 6,
+            "item" : "Permit Number 773594"
+          }, {
+            "count" : 5,
+            "item" : "Permit Number 775374"
+          }, {
+            "count" : 4,
+            "item" : "Permit Number 775447"
+          }, {
+            "count" : 3,
+            "item" : "Permit Number 775407"
+          }, {
+            "count" : 2,
+            "item" : "Permit Number 775444"
+          }, {
+            "count" : 1,
+            "item" : "Permit Number 774506"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912737,
+        "name" : "XCoord",
+        "dataTypeName" : "number",
+        "fieldName" : "xcoord",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4269463,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 82935,
+          "smallest" : "5980415.19176",
+          "sum" : "497805908177.16717706",
+          "null" : 3238,
+          "average" : "6002362.189391297",
+          "largest" : "6022030.55852908",
+          "top" : [ {
+            "count" : 20,
+            "item" : "6010419"
+          }, {
+            "count" : 19,
+            "item" : "6006820"
+          }, {
+            "count" : 18,
+            "item" : "6006369"
+          }, {
+            "count" : 17,
+            "item" : "6013666"
+          }, {
+            "count" : 16,
+            "item" : "5996638"
+          }, {
+            "count" : 15,
+            "item" : "6005492"
+          }, {
+            "count" : 14,
+            "item" : "6005663"
+          }, {
+            "count" : 13,
+            "item" : "6009776"
+          }, {
+            "count" : 12,
+            "item" : "6013408"
+          }, {
+            "count" : 11,
+            "item" : "6013721"
+          }, {
+            "count" : 10,
+            "item" : "6014913.4"
+          }, {
+            "count" : 9,
+            "item" : "6014792"
+          }, {
+            "count" : 8,
+            "item" : "6013092.21392497"
+          }, {
+            "count" : 7,
+            "item" : "6008483.78947274"
+          }, {
+            "count" : 6,
+            "item" : "6009556.06624176"
+          }, {
+            "count" : 5,
+            "item" : "5999051.93359615"
+          }, {
+            "count" : 4,
+            "item" : "5998894"
+          }, {
+            "count" : 3,
+            "item" : "6011831.59667013"
+          }, {
+            "count" : 2,
+            "item" : "6004666"
+          }, {
+            "count" : 1,
+            "item" : "6004434"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912738,
+        "name" : "YCoord",
+        "dataTypeName" : "number",
+        "fieldName" : "ycoord",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4269464,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 82935,
+          "smallest" : "2013289.413",
+          "sum" : "174593551522.80383704",
+          "null" : 3238,
+          "average" : "2105185.404507190",
+          "largest" : "2122941.38889516",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2107391"
+          }, {
+            "count" : 19,
+            "item" : "2110405"
+          }, {
+            "count" : 18,
+            "item" : "2111487"
+          }, {
+            "count" : 17,
+            "item" : "2106949"
+          }, {
+            "count" : 16,
+            "item" : "2103080"
+          }, {
+            "count" : 15,
+            "item" : "2116634"
+          }, {
+            "count" : 14,
+            "item" : "2111682"
+          }, {
+            "count" : 13,
+            "item" : "2113357"
+          }, {
+            "count" : 12,
+            "item" : "2104437.2"
+          }, {
+            "count" : 11,
+            "item" : "2113102"
+          }, {
+            "count" : 10,
+            "item" : "2119699.24581533"
+          }, {
+            "count" : 9,
+            "item" : "2121873.83782792"
+          }, {
+            "count" : 8,
+            "item" : "2107683"
+          }, {
+            "count" : 7,
+            "item" : "2107504.61941603"
+          }, {
+            "count" : 6,
+            "item" : "2109838"
+          }, {
+            "count" : 5,
+            "item" : "2106163.95855958"
+          }, {
+            "count" : 4,
+            "item" : "2102987"
+          }, {
+            "count" : 3,
+            "item" : "2105265"
+          }, {
+            "count" : 2,
+            "item" : "2099021"
+          }, {
+            "count" : 1,
+            "item" : "2097126"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912739,
+        "name" : "Latitude",
+        "dataTypeName" : "number",
+        "fieldName" : "latitude",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4667900,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 82935,
+          "smallest" : "37.5090039879895",
+          "sum" : "3131672.6763974241750",
+          "null" : 3238,
+          "average" : "37.76056763004068",
+          "largest" : "37.8103949467147",
+          "top" : [ {
+            "count" : 20,
+            "item" : "37.7668796319268"
+          }, {
+            "count" : 19,
+            "item" : "37.7751299410446"
+          }, {
+            "count" : 18,
+            "item" : "37.7775473668867"
+          }, {
+            "count" : 17,
+            "item" : "37.7655911088206"
+          }, {
+            "count" : 16,
+            "item" : "37.7549773975701"
+          }, {
+            "count" : 15,
+            "item" : "37.7924247975925"
+          }, {
+            "count" : 14,
+            "item" : "37.7790306545162"
+          }, {
+            "count" : 13,
+            "item" : "37.7836472413673"
+          }, {
+            "count" : 12,
+            "item" : "37.7592217202179"
+          }, {
+            "count" : 11,
+            "item" : "37.7830066040332"
+          }, {
+            "count" : 10,
+            "item" : "37.8007686919991"
+          }, {
+            "count" : 9,
+            "item" : "37.8067997698403"
+          }, {
+            "count" : 8,
+            "item" : "37.7672317271747"
+          }, {
+            "count" : 7,
+            "item" : "37.7674726364822"
+          }, {
+            "count" : 6,
+            "item" : "37.7734769308436"
+          }, {
+            "count" : 5,
+            "item" : "37.7636626423221"
+          }, {
+            "count" : 4,
+            "item" : "37.7540453100112"
+          }, {
+            "count" : 3,
+            "item" : "37.7601637210649"
+          }, {
+            "count" : 2,
+            "item" : "37.7430561122783"
+          }, {
+            "count" : 1,
+            "item" : "37.7378683540452"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912740,
+        "name" : "Longitude",
+        "dataTypeName" : "number",
+        "fieldName" : "longitude",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 4667915,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 82935,
+          "smallest" : "-122.511257155794",
+          "sum" : "-10154140.781238975583",
+          "null" : 3238,
+          "average" : "-122.4349283322961",
+          "largest" : "-122.368107024455",
+          "top" : [ {
+            "count" : 20,
+            "item" : "-122.419667156869"
+          }, {
+            "count" : 19,
+            "item" : "-122.421441165405"
+          }, {
+            "count" : 18,
+            "item" : "-122.455180869531"
+          }, {
+            "count" : 17,
+            "item" : "-122.424229059984"
+          }, {
+            "count" : 16,
+            "item" : "-122.423362541701"
+          }, {
+            "count" : 15,
+            "item" : "-122.410095399183"
+          }, {
+            "count" : 14,
+            "item" : "-122.397181094632"
+          }, {
+            "count" : 13,
+            "item" : "-122.396215718247"
+          }, {
+            "count" : 12,
+            "item" : "-122.391466645187"
+          }, {
+            "count" : 11,
+            "item" : "-122.392492594241"
+          }, {
+            "count" : 10,
+            "item" : "-122.414783527607"
+          }, {
+            "count" : 9,
+            "item" : "-122.41122668881"
+          }, {
+            "count" : 8,
+            "item" : "-122.447102814384"
+          }, {
+            "count" : 7,
+            "item" : "-122.402340743885"
+          }, {
+            "count" : 6,
+            "item" : "-122.42729182472"
+          }, {
+            "count" : 5,
+            "item" : "-122.410213085123"
+          }, {
+            "count" : 4,
+            "item" : "-122.464384550175"
+          }, {
+            "count" : 3,
+            "item" : "-122.472715460505"
+          }, {
+            "count" : 2,
+            "item" : "-122.470061197968"
+          }, {
+            "count" : 1,
+            "item" : "-122.469000113007"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 204912741,
+        "name" : "Location",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 18,
+        "renderTypeName" : "location",
+        "tableColumnId" : 4667916,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 82935,
+          "smallest" : {
+            "longitude" : "-122.468907971557",
+            "latitude" : "37.7867578224504"
+          },
+          "null" : 3238,
+          "largest" : {
+            "longitude" : "-122.43465795135",
+            "latitude" : "37.7358194208381"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "-122.419667156859",
+              "latitude" : "37.7668796457203"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "-122.421441165395",
+              "latitude" : "37.7751299548301"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "-122.455180869521",
+              "latitude" : "37.7775473806699"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "-122.424229059974",
+              "latitude" : "37.7655911226153"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "-122.423362541691",
+              "latitude" : "37.7549774113751"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "-122.410095399173",
+              "latitude" : "37.7924248113612"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "longitude" : "-122.397181094622",
+              "latitude" : "37.7790306682979"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "longitude" : "-122.396215718238",
+              "latitude" : "37.7836472551445"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "longitude" : "-122.391466645177",
+              "latitude" : "37.7592217340188"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "longitude" : "-122.392492594231",
+              "latitude" : "37.7830066178111"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "longitude" : "-122.414783527597",
+              "latitude" : "37.8007687057598"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "longitude" : "-122.4112266888",
+              "latitude" : "37.8067997835951"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "longitude" : "-122.447102814374",
+              "latitude" : "37.7672317409679"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "longitude" : "-122.402340743875",
+              "latitude" : "37.7674726502751"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "longitude" : "-122.42729182471",
+              "latitude" : "37.7734769446307"
+            }
+          }, {
+            "count" : 5,
+            "item" : {
+              "longitude" : "-122.410213085113",
+              "latitude" : "37.7636626561187"
+            }
+          }, {
+            "count" : 4,
+            "item" : {
+              "longitude" : "-122.464384550164",
+              "latitude" : "37.7540453238171"
+            }
+          }, {
+            "count" : 3,
+            "item" : {
+              "longitude" : "-122.472715460495",
+              "latitude" : "37.7601637348649"
+            }
+          }, {
+            "count" : 2,
+            "item" : {
+              "longitude" : "-122.470061197957",
+              "latitude" : "37.7430561260948"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : "-122.469000112997",
+              "latitude" : "37.7378683678668"
+            }
+          } ]
+        },
+        "format" : {
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "displayFormat" : {
+        "viewport" : {
+          "ymin" : 37.703067,
+          "ymax" : 37.812591,
+          "xmin" : -122.619353,
+          "xmax" : -122.289763
+        },
+        "plotStyle" : "point",
+        "layers" : [ {
+          "type" : "tile",
+          "url" : "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+          "options" : {
+            "opacity" : 1
+          }
+        } ],
+        "type" : "esri",
+        "plot" : {
+          "locationId" : 4667916
+        }
+      },
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Open Data Commons Public Domain Dedication and License",
+        "termsLink" : "http://opendatacommons.org/licenses/pddl/1.0/"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Department Metrics" : {
+            "Publishing Department" : "Public Works"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "map" : true
+          },
+          "active" : {
+            "page" : {
+              "id" : "20804"
+            }
+          }
+        },
+        "availableDisplayTypes" : [ "map", "table", "fatrow", "page" ],
+        "rdfSubject" : "0"
+      },
+      "owner" : {
+        "id" : "rcpp-nrjq",
+        "displayName" : "SFDPW",
+        "profileImageUrlLarge" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_tiny.jpg",
+        "roleName" : "editor",
+        "screenName" : "SFDPW",
+        "rights" : [ "create_datasets", "view_domain", "short_session", "view_goals", "view_dashboards" ]
+      },
+      "query" : {
+        "orderBys" : [ {
+          "ascending" : false,
+          "expression" : {
+            "columnId" : 204912727,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "sortBys" : [ {
+        "id" : 0,
+        "viewColumnId" : 204912727
+      } ],
+      "tableAuthor" : {
+        "id" : "rcpp-nrjq",
+        "displayName" : "SFDPW",
+        "profileImageUrlLarge" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/3251/3522/DPW_Logo_Blue-Orange_144_tiny.jpg",
+        "roleName" : "editor",
+        "screenName" : "SFDPW",
+        "rights" : [ "create_datasets", "view_domain", "short_session", "view_goals", "view_dashboards" ]
+      },
+      "tags" : [ "trees" ]
+    }
+  },
+  "data" : [ [ 13886, "5162B688-7CF0-4888-9127-509F44D6BCF4", 13886, 1432222811, "403253", 1432222811, "403253", "{\n}", "16470", "DPW Maintained", "Eucalyptus sideroxylon :: Red Ironbark", "9X Newhall St", "4", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "12", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13887, "621DFDC8-6F20-432B-9457-36672B29BA98", 13887, 1432222811, "403253", 1432222811, "403253", "{\n}", "16471", "DPW Maintained", "Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint", "9X Newhall St", "5", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "3", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13888, "60912E42-7F8A-43E8-85EE-47BCD929D7DE", 13888, 1432222811, "403253", 1432222811, "403253", "{\n}", "16472", "DPW Maintained", "Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint", "9X Newhall St", "6", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "18", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13889, "39A8F5EB-6BAF-45E3-AF32-6809CD029CA5", 13889, 1432222811, "403253", 1432222811, "403253", "{\n}", "16473", "DPW Maintained", "Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint", "9X Newhall St", "7", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "12", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13890, "1839B49A-4027-4401-87C8-99EF29E07FF3", 13890, 1432222811, "403253", 1432222811, "403253", "{\n}", "16475", "DPW Maintained", "Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint", "9X Newhall St", "9", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "18", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13891, "8D2F67FC-E108-4D8B-8BA5-FEF78A1A259C", 13891, 1432222811, "403253", 1432222811, "403253", "{\n}", "16476", "DPW Maintained", "Eucalyptus nicholii :: Nichol's Willow-Leafed Peppermint", "9X Newhall St", "10", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "12", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 13892, "FDF2EF5C-8B01-493C-A482-D9325F047E20", 13892, 1432222811, "403253", 1432222811, "403253", "{\n}", "16478", "DPW Maintained", "Melaleuca linariifolia :: Flaxleaf Paperbark", "9X Newhall St", "12", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "1997-05-16T00:00:00", "6", "3X3", null, "6018697.2048701", "2097076.1109207", "37.7392189485182", "-122.377869364283", [ null, "37.7392189623385", "-122.377869364273", null, false ] ]
+, [ 11153, "1181693C-9CCC-4D50-AE02-66EDB860D7E9", 11153, 1432222809, "403253", 1432222809, "403253", "{\n}", "13302", "DPW Maintained", "Corymbia ficifolia :: Red Flowering Gum", "9X Lyell St", "2", "Median : Cutout", "Tree", "DPW", null, null, "12", "10", null, "6003085.6859492", "2094681.4720202", "37.7317711908882", "-122.431676032431", [ null, "37.7317712047158", "-122.431676032421", null, false ] ]
+, [ 11154, "F16DCC8A-5D88-4950-81FE-5C78A6A55460", 11154, 1432222809, "403253", 1432222809, "403253", "{\n}", "13303", "DPW Maintained", "Corymbia ficifolia :: Red Flowering Gum", "9X Lyell St", "3", "Median : Cutout", "Tree", "DPW", null, null, "18", "15", null, "6003085.6859492", "2094681.4720202", "37.7317711908882", "-122.431676032431", [ null, "37.7317712047158", "-122.431676032421", null, false ] ]
+, [ 11155, "81ADB233-47EA-42B1-8F21-007AB0BE61DB", 11155, 1432222809, "403253", 1432222809, "403253", "{\n}", "13304", "DPW Maintained", "Corymbia ficifolia :: Red Flowering Gum", "9X Lyell St", "4", "Median : Cutout", "Tree", "DPW", null, null, "12", "15", null, "6003085.6859492", "2094681.4720202", "37.7317711908882", "-122.431676032431", [ null, "37.7317712047158", "-122.431676032421", null, false ] ]
+, [ 11152, "A75F7A60-78E1-486D-965D-45479EC19E21", 11152, 1432222809, "403253", 1432222809, "403253", "{\n}", "13301", "DPW Maintained", "Corymbia ficifolia :: Red Flowering Gum", "9X Lyell St", "1", "Median : Cutout", "Tree", "DPW", null, null, "18", "6", null, "6003085.6859492", "2094681.4720202", "37.7317711908882", "-122.431676032431", [ null, "37.7317712047158", "-122.431676032421", null, false ] ]
+, [ 79334, "F51740A0-AC6B-4EC9-ACD4-41494AF95AB7", 79334, 1432222865, "403253", 1432222865, "403253", "{\n}", "102171", "Permitted Site", "Prunus serrulata 'Kwanzan' :: Kwanzan Flowering Cherry", "9X Hattie St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2012-12-31T00:00:00", "4", "3x3", "Permit Number 769765", "6000621", "2105580.9", "37.7615584024391", "-122.440978567809", [ null, "37.7615584162377", "-122.440978567799", null, false ] ]
+, [ 79335, "E40F33B9-AC6D-4F88-8BFE-5E460BF59D74", 79335, 1432222865, "403253", 1432222865, "403253", "{\n}", "102172", "Permitted Site", "Prunus serrulata 'Kwanzan' :: Kwanzan Flowering Cherry", "9X Hattie St", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2012-12-31T00:00:00", "4", "3x3", "Permit Number 769765", "6000621", "2105580.9", "37.7615584024391", "-122.440978567809", [ null, "37.7615584162377", "-122.440978567799", null, false ] ]
+, [ 64821, "08C8F59E-AFB3-4EC1-9EC9-99690F62B851", 64821, 1432222853, "403253", 1432222853, "403253", "{\n}", "82730", "Permitted Site", "Tristaniopsis laurina :: Swamp Myrtle", "9 Wright St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "2008-02-12T00:00:00", null, "3x3", "Permit Number 50252", "6010855.23991153", "2100179.71813012", "37.7473055380861", "-122.405201987981", [ null, "37.7473055518985", "-122.405201987971", null, false ] ]
+, [ 69224, "3679C200-2701-48A9-9FFC-12C1EF67D79A", 69224, 1432222857, "403253", 1432222857, "403253", "{\n}", "89325", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Woodland Ave", null, "Sidewalk: Curb side : Cutout", "Tree", "Private", null, null, null, "3x3", "Permit Number 51916", "5997029.857035", "2106609.796737", "37.7641783004773", "-122.453473083262", [ null, "37.7641783142735", "-122.453473083252", null, false ] ]
+, [ 26417, "608EE34C-23C5-4B3D-BFE2-D2A83B8BE692", 26417, 1432222821, "403253", 1432222821, "403253", "{\n}", "31056", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Toyon Ln", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1995-03-13T00:00:00", null, null, "Permit Number 34808", "6003297.43770695", "2086548.15992465", "37.7094509143057", "-122.430363885353", [ null, "37.7094509281549", "-122.430363885343", null, false ] ]
+, [ 55585, "B5844FD6-5C5F-4200-9525-7857F0803E62", 55585, 1432222846, "403253", 1432222846, "403253", "{\n}", "61003", "Permitted Site", "Tree(s) ::", "9 Surrey St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1983-07-18T00:00:00", null, null, "Permit Number 20817", "6002821.66931005", "2095814.09914927", "37.734866158012", "-122.432669668042", [ null, "37.7348661718365", "-122.432669668032", null, false ] ]
+, [ 30531, "7C6520EA-C975-4E94-9EAD-35606E46EEBF", 30531, 1432222824, "403253", 1432222824, "403253", "{\n}", "35287", "Permitted Site", "Rhaphiolepis Majestic Beauty :: Indian Hawthorn  'Majestic Beau'", "9 Sunview Way", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1998-02-17T00:00:00", null, null, "Permit Number 38760", "5999156.87191686", "2100394.4524673", "37.7472341922613", "-122.445669382384", [ null, "37.7472342060738", "-122.445669382374", null, false ] ]
+, [ 82586, "004349EB-AE91-447E-BC9C-E4221AA70505", 82586, 1432222868, "403253", 1432222868, "403253", "{\n}", "106366", "Undocumented", "Metrosideros excelsa :: New Zealand Xmas Tree", "9 SEAL ROCK DR", null, "Sidewalk: Curb side : Cutout", "Tree", "Private", null, null, null, null, null, "5981833.1", "2112945.4", "37.7806911884837", "-122.506503269885", [ null, "37.7806912022638", "-122.506503269874", null, false ] ]
+, [ 54310, "C7EFF3E1-E018-4561-8865-7447122F47B6", 54310, 1432222844, "403253", 1432222844, "403253", "{\n}", "59685", "Permitted Site", "Tree(s) ::", "9 Seal Rock Dr", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1981-04-30T00:00:00", null, null, "Permit Number 19111", "5981869.97905935", "2113002.22649448", "37.7808493885238", "-122.506379904979", [ null, "37.7808494023038", "-122.506379904968", null, false ] ]
+, [ 62176, "C37AF660-DE66-4F35-897F-CFD8D2377EEB", 62176, 1432222851, "403253", 1432222851, "403253", "{\n}", "67778", "Permitted Site", "Magnolia grandiflora :: Southern Magnolia", "9 Scott St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1992-12-15T00:00:00", null, null, "Permit Number 31411", "6002404.08710515", "2108339.86217686", "37.7692352345306", "-122.435008933328", [ null, "37.7692352483218", "-122.435008933318", null, false ] ]
+, [ 42296, "B7594CCA-E9E4-4595-B6D8-1BED530A5984", 42296, 1432222834, "403253", 1432222834, "403253", "{\n}", "47363", "Permitted Site", "Arbutus 'Marina' :: Hybrid Strawberry Tree", "9 Sargent St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2002-05-25T00:00:00", null, null, "Permit Number 45283", "5993960.32642568", "2089153.19671613", "37.7160704080681", "-122.462823115402", [ null, "37.7160704219108", "-122.462823115392", null, false ] ]
+, [ 40230, "EDF16012-5333-45E4-9B00-F0AC4136CFC7", 40230, 1432222833, "403253", 1432222833, "403253", "{\n}", "45255", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Samoset St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2001-06-12T00:00:00", null, null, "Permit Number 44102", "6010045.72579485", "2099125.58419784", "37.7443658267716", "-122.407926917647", [ null, "37.7443658405869", "-122.407926917638", null, false ] ]
+, [ 56247, "B9421CFE-12DD-4B3D-98BD-586104BEDA83", 56247, 1432222846, "403253", 1432222846, "403253", "{\n}", "61695", "Permitted Site", "Ligustrum lucidum :: Glossy Privet", "9 Ramona St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1984-12-07T00:00:00", null, null, "Permit Number 21694", "6005214.10969137", "2107753.44919209", "37.7677842392376", "-122.425247470035", [ null, "37.7677842530302", "-122.425247470025", null, false ] ]
+, [ 57527, "2ABD1984-E204-4F6C-80E9-DC3AD44DF8B4", 57527, 1432222847, "403253", 1432222847, "403253", "{\n}", "63010", "Permitted Site", "Schinus molle :: California Pepper", "9 Powhattan Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1986-09-23T00:00:00", null, null, "Permit Number 23424", "6007395.1381387", "2098224.27155142", "37.7417422703287", "-122.417028268249", [ null, "37.7417422841465", "-122.417028268239", null, false ] ]
+, [ 62504, "91276017-5277-4304-A75E-CF690ECC6C13", 62504, 1432222851, "403253", 1432222851, "403253", "{\n}", "68114", "Permitted Site", "Pittosporum crassifolium :: Karo Tree", "9 Powers Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1993-05-20T00:00:00", null, null, "Permit Number 31860", "6006758.25542917", "2099860.24648368", "37.7461984425313", "-122.419346431514", [ null, "37.7461984563448", "-122.419346431505", null, false ] ]
+, [ 14690, "19327F05-BE14-44FE-838F-17F1CC058A32", 14690, 1432222812, "403253", 1432222812, "403253", "{\n}", "17490", "DPW Maintained", "Ulmus parvifolia :: Chinese Elm", "9 Persia Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "60", "3X3", null, "6001885.59274", "2091516.24402", "37.7230120955189", "-122.435598633585", [ null, "37.7230121093549", "-122.435598633575", null, false ] ]
+, [ 27774, "D4345FE1-32F5-4408-834A-17F794B732D9", 27774, 1432222822, "403253", 1432222822, "403253", "{\n}", "32475", "Permitted Site", "Maytenus boaria :: Mayten", "9 Ord St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1996-10-10T00:00:00", null, null, "Permit Number 36983", "6000862.79914757", "2106265.83109498", "37.763452823599", "-122.440191404184", [ null, "37.7634528373958", "-122.440191404174", null, false ] ]
+, [ 55306, "59EBEA6F-A5AD-4AEF-ABED-95D137170830", 55306, 1432222845, "403253", 1432222845, "403253", "{\n}", "60713", "Permitted Site", "Liquidambar styraciflua :: American Sweet Gum", "9 Oakwood St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1983-02-02T00:00:00", "12", "5x5", "Permit Number 20366", "6005260.97523206", "2105400.53272708", "37.7613263377571", "-122.424917946837", [ null, "37.761326351556", "-122.424917946827", null, false ] ]
+, [ 61562, "6D8FF050-4C6B-4804-A723-1E5F1BAB4831", 61562, 1432222850, "403253", 1432222850, "403253", "{\n}", "67145", "Permitted Site", "Pyrus kawakamii :: Evergreen Pear", "9 Massasoit St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1992-04-30T00:00:00", null, null, "Permit Number 30576", "6010104.62054101", "2099298.30623793", "37.7448433809463", "-122.407735447457", [ null, "37.7448433947611", "-122.407735447447", null, false ] ]
+, [ 47172, "E4459FBF-0F3F-4B84-B121-DD2C32B0ACA6", 47172, 1432222838, "403253", 1432222838, "403253", "{\n}", "52343", "Permitted Site", "Ginkgo biloba :: Maidenhair Tree", "9 Madrone Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "2005-12-12T00:00:00", null, null, "Permit Number 48487", "5993020.12336705", "2099071.55255043", "37.7432495660688", "-122.466793461069", [ null, "37.7432495798852", "-122.466793461059", null, false ] ]
+, [ 31248, "8854C526-3C02-49E2-8C35-3BEB9DD0FE76", 31248, 1432222825, "403253", 1432222825, "403253", "{\n}", "36028", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Lundy's Ln", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2001-07-19T00:00:00", null, null, "Permit Number 44260", "6007255.63036623", "2099661.65430436", "37.7456811532613", "-122.41761249358", [ null, "37.7456811670753", "-122.41761249357", null, false ] ]
+, [ 52683, "D85D6D44-40C0-4F83-BA34-7390D9B7CD56", 52683, 1432222843, "403253", 1432222843, "403253", "{\n}", "58010", "Permitted Site", "Tree(s) ::", "9 Loyola Ter", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1977-08-31T00:00:00", null, null, "Permit Number 16977", "5998421.90596255", "2110729.08100606", "37.7755685024107", "-122.448955158861", [ null, "37.7755685161958", "-122.448955158851", null, false ] ]
+, [ 9648, "2428739E-7A83-4EFF-9075-15FFEF18754F", 9648, 1432222808, "403253", 1432222808, "403253", "{\n}", "11454", "DPW Maintained", "Pittosporum undulatum :: Victorian Box", "9 Jade Pl", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "2006-03-11T00:00:00", "3", "3X3", null, "6000702.8384041", "2098560.6268459", "37.7422870867037", "-122.440192077523", [ null, "37.7422871005211", "-122.440192077513", null, false ] ]
+, [ 53398, "05614AEE-98BF-4E0C-99D1-AF8D27E9DD10", 53398, 1432222843, "403253", 1432222843, "403253", "{\n}", "58744", "Permitted Site", "Pittosporum spp :: Pittosporum spp", "9 Jade Pl", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1979-07-13T00:00:00", "3", null, "Permit Number 17982", "6000702.83928328", "2098559.62547074", "37.7422843372145", "-122.44019200269", [ null, "37.7422843510319", "-122.44019200268", null, false ] ]
+, [ 9649, "B8D8DBCE-4EB2-4500-B468-B615B529703B", 9649, 1432222808, "403253", 1432222808, "403253", "{\n}", "11455", "DPW Maintained", "Pittosporum crassifolium :: Karo Tree", "9 Jade Pl", "2", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "20", "3X3", null, "6000702.8384041", "2098560.6268459", "37.7422870867037", "-122.440192077523", [ null, "37.7422871005211", "-122.440192077513", null, false ] ]
+, [ 64812, "6C12C24D-3ADF-4470-AD5C-C82C19697148", 64812, 1432222853, "403253", 1432222853, "403253", "{\n}", "82709", "Permitted Site", "Casurina stricta :: Beefwood: Drooping She-Oak", "9 Ignacio Ave", "5", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "2009-07-08T00:00:00", null, "3x3", "Permit Number 52491", "6015428.30253867", "2088370.80983531", "37.7151352504121", "-122.388564367914", [ null, "37.7151352642557", "-122.388564367904", null, false ] ]
+, [ 55497, "5D51A4E2-8D0C-4A1C-9B53-F651DDCFDC5F", 55497, 1432222845, "403253", 1432222845, "403253", "{\n}", "60911", "Permitted Site", "Prunus blireiana :: Flowering Plum", "9 Hugo St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1983-06-18T00:00:00", null, null, "Permit Number 20703", "5995767.1919331", "2107036.52457374", "37.7652775252135", "-122.457871132491", [ null, "37.7652775390085", "-122.457871132481", null, false ] ]
+, [ 50409, "BB925587-30C7-48CF-BF73-FE36711D5F3F", 50409, 1432222841, "403253", 1432222841, "403253", "{\n}", "55678", "Permitted Site", "Tree(s) ::", "9 Heyman St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1973-02-22T00:00:00", null, null, "Permit Number 11672", "6006378.37532076", "2098417.78567052", "37.7422163679361", "-122.420557636594", [ null, "37.7422163817535", "-122.420557636584", null, false ] ]
+, [ 55763, "39114A1B-0F80-40E0-B83A-56B8CB45DF15", 55763, 1432222846, "403253", 1432222846, "403253", "{\n}", "61184", "Permitted Site", "Tree(s) ::", "9 Heather Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1983-10-20T00:00:00", null, null, "Permit Number 21043", "5997330.97742316", "2114398.73356758", "37.7855819546709", "-122.452993873569", [ null, "37.7855819684463", "-122.452993873559", null, false ] ]
+, [ 84400, "77C0A6C5-7C40-47FA-BCDA-838D754BA8CF", 84400, 1432222869, "403253", 1432222869, "403253", "{\n}", "108715", "Permitted Site", "Pittosporum undulatum :: Victorian Box", "9 Harper St", null, "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2015-01-02T00:00:00", "3", "3x3", "Permit Number 774631", "6003684.36385", "2098301.36438", "37.7417445077158", "-122.42986438957", [ null, "37.7417445215336", "-122.42986438956", null, false ] ]
+, [ 29003, "8A39CF40-6CF8-4098-955E-65A2B4670578", 29003, 1432222823, "403253", 1432222823, "403253", "{\n}", "33738", "Permitted Site", "Tree(s) ::", "9 Germania St", "3", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1996-12-04T00:00:00", null, null, "Permit Number 37797", "6004233.8342094", "2108879.40843763", "37.770820421835", "-122.428718401006", [ null, "37.7708204356247", "-122.428718400996", null, false ] ]
+, [ 29004, "B87AC4C1-1863-460F-929E-2B8A1EEBC59E", 29004, 1432222823, "403253", 1432222823, "403253", "{\n}", "33739", "Permitted Site", "Tree(s) ::", "9 Germania St", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1996-12-04T00:00:00", null, null, "Permit Number 37797", "6004233.8342094", "2108879.40843763", "37.770820421835", "-122.428718401006", [ null, "37.7708204356247", "-122.428718400996", null, false ] ]
+, [ 29002, "A4AA8607-5074-442A-B745-C803381B5D6D", 29002, 1432222823, "403253", 1432222823, "403253", "{\n}", "33737", "Permitted Site", "Tree(s) ::", "9 Germania St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "2014-07-28T00:00:00", null, "3x3", "Permit Number 773245", "6004233.8342094", "2108879.40843763", "37.770820421835", "-122.428718401006", [ null, "37.7708204356247", "-122.428718400996", null, false ] ]
+, [ 52903, "C16E5E1D-D1BC-4DDF-900F-536FB7BA723F", 52903, 1432222843, "403253", 1432222843, "403253", "{\n}", "58236", "Permitted Site", "Tree(s) ::", "9 Geneva Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1978-07-14T00:00:00", null, null, "Permit Number 17238", "5997285.8851743", "2091542.74733259", "37.7228225387636", "-122.451500720082", [ null, "37.7228225525998", "-122.451500720072", null, false ] ]
+, [ 52670, "5BB6E701-1A00-45A2-A3B5-7D533568B28D", 52670, 1432222843, "403253", 1432222843, "403253", "{\n}", "57993", "Permitted Site", "Tree(s) ::", "9 Edith St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1977-08-09T00:00:00", null, null, "Permit Number 16958", "6010426.27976701", "2120392.21369113", "37.802780362145", "-122.408110570239", [ null, "37.8027803759037", "-122.408110570229", null, false ] ]
+, [ 62491, "98F6620D-0449-4869-AE72-5136FDAF7257", 62491, 1432222851, "403253", 1432222851, "403253", "{\n}", "68099", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Duncan St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1993-04-26T00:00:00", null, null, "Permit Number 31844", "6006420.25408514", "2099944.49896622", "37.7464107382986", "-122.420521179775", [ null, "37.746410752112", "-122.420521179765", null, false ] ]
+, [ 45710, "EA8B0C61-3175-4E50-83D4-2D0C5A844191", 45710, 1432222837, "403253", 1432222837, "403253", "{\n}", "50849", "Permitted Site", "Prunus cerasifera :: Cherry Plum", "9 Downey St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2004-04-08T00:00:00", null, null, "Permit Number 47366", "5998757.14081864", "2108242.36431455", "37.7687597794902", "-122.447616458722", [ null, "37.7687597932819", "-122.447616458711", null, false ] ]
+, [ 37220, "EFBB01CC-3DAC-467E-AAEF-18A52FD2F507", 37220, 1432222830, "403253", 1432222830, "403253", "{\n}", "42204", "Permitted Site", "Rhaphiolepis Majestic Beauty :: Indian Hawthorn  'Majestic Beau'", "9 Decatur St", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2000-06-23T00:00:00", null, null, "Permit Number 42476", "6010698.23461682", "2109484.81517173", "37.772846468106", "-122.406400454552", [ null, "37.7728464818938", "-122.406400454543", null, false ] ]
+, [ 37221, "BF522684-9B0B-476F-BD0D-20E94D59EEC6", 37221, 1432222830, "403253", 1432222830, "403253", "{\n}", "42205", "Permitted Site", "Rhaphiolepis Majestic Beauty :: Indian Hawthorn  'Majestic Beau'", "9 Decatur St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2000-06-23T00:00:00", null, null, "Permit Number 42476", "6010698.23461682", "2109484.81517173", "37.772846468106", "-122.406400454552", [ null, "37.7728464818938", "-122.406400454543", null, false ] ]
+, [ 4156, "350F5170-0884-4BE8-8979-619CCEBEC629", 4156, 1432222804, "403253", 1432222804, "403253", "{\n}", "4856", "DPW Maintained", "Callistemon citrinus :: Lemon Bottlebrush", "9 Crags Ct", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "25", "3X3", null, "6000865.9338483", "2097917.4934651", "37.7405304782665", "-122.43958205016", [ null, "37.7405304920855", "-122.43958205015", null, false ] ]
+, [ 4157, "AE5D422B-BD10-4704-901C-2400AD7DEC1E", 4157, 1432222804, "403253", 1432222804, "403253", "{\n}", "4857", "DPW Maintained", "Callistemon citrinus :: Lemon Bottlebrush", "9 Crags Ct", "2", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "6", "3X3", null, "6000865.9338483", "2097917.4934651", "37.7405304782665", "-122.43958205016", [ null, "37.7405304920855", "-122.43958205015", null, false ] ]
+, [ 57626, "A0C375F5-B18C-447E-A363-EAEDB3A7964B", 57626, 1432222847, "403253", 1432222847, "403253", "{\n}", "63112", "Permitted Site", "Eucalyptus Spp :: Eucalyptus", "9 Coleridge St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1986-12-05T00:00:00", null, null, "Permit Number 23616", "6007066.07091245", "2099699.59516801", "37.7457746619282", "-122.418270653095", [ null, "37.7457746757422", "-122.418270653085", null, false ] ]
+, [ 49586, "1D1970B2-9A91-4064-B450-8A43065D9447", 49586, 1432222840, "403253", 1432222840, "403253", "{\n}", "54843", "Permitted Site", "Tree(s) ::", "9 Clayton St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1972-08-09T00:00:00", null, null, "Permit Number 10698", "5998182.44008556", "2110628.70578044", "37.7752792000592", "-122.449776290493", [ null, "37.7752792138445", "-122.449776290483", null, false ] ]
+, [ 30232, "73BCE958-2CE7-4109-91B8-B973667964DC", 30232, 1432222824, "403253", 1432222824, "403253", "{\n}", "34982", "Permitted Site", "Tristaniopsis laurina :: Swamp Myrtle", "9 Clarendon Ave", "3", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-12-18T00:00:00", null, null, "Permit Number 38562", "5998341.27467833", "2104673.78697421", "37.7589375897571", "-122.448797828898", [ null, "37.7589376035583", "-122.448797828888", null, false ] ]
+, [ 30234, "EBADBE51-6E5D-4F96-BCF9-AA375D433C4B", 30234, 1432222824, "403253", 1432222824, "403253", "{\n}", "34984", "Permitted Site", "Metrosideros excelsa :: New Zealand Xmas Tree", "9 Clarendon Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-12-18T00:00:00", null, null, "Permit Number 38562", "5998341.27467833", "2104673.78697421", "37.7589375897571", "-122.448797828898", [ null, "37.7589376035583", "-122.448797828888", null, false ] ]
+, [ 30233, "22EA9733-C474-4C66-A5CC-A7A201FC9B64", 30233, 1432222824, "403253", 1432222824, "403253", "{\n}", "34983", "Permitted Site", "Tristaniopsis laurina :: Swamp Myrtle", "9 Clarendon Ave", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-12-18T00:00:00", null, null, "Permit Number 38562", "5998341.27467833", "2104673.78697421", "37.7589375897571", "-122.448797828898", [ null, "37.7589376035583", "-122.448797828888", null, false ] ]
+, [ 29498, "4FA6F961-7E4A-4267-8AAF-60AEDB77CB4B", 29498, 1432222823, "403253", 1432222823, "403253", "{\n}", "34238", "Permitted Site", "Pyrus kawakamii :: Evergreen Pear", "9 Chattanooga St", "4", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-07-07T00:00:00", null, null, "Permit Number 38051", "6004714.42221556", "2103615.95230322", "37.7563954143949", "-122.426681158586", [ null, "37.7563954281986", "-122.426681158576", null, false ] ]
+, [ 29499, "06A9B59F-6D31-496D-B056-C86C8BC121E1", 29499, 1432222823, "403253", 1432222823, "403253", "{\n}", "34239", "Permitted Site", "Pyrus kawakamii :: Evergreen Pear", "9 Chattanooga St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-07-07T00:00:00", null, null, "Permit Number 38051", "6004714.42221556", "2103615.95230322", "37.7563954143949", "-122.426681158586", [ null, "37.7563954281986", "-122.426681158576", null, false ] ]
+, [ 29500, "12F3EEA6-B2BA-42DD-B6E7-9E972BFC7441", 29500, 1432222823, "403253", 1432222823, "403253", "{\n}", "34240", "Permitted Site", "Pyrus kawakamii :: Evergreen Pear", "9 Chattanooga St", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-07-07T00:00:00", null, null, "Permit Number 38051", "6004714.42221556", "2103615.95230322", "37.7563954143949", "-122.426681158586", [ null, "37.7563954281986", "-122.426681158576", null, false ] ]
+, [ 29501, "666EEF00-697A-4287-AD41-D422195316D5", 29501, 1432222823, "403253", 1432222823, "403253", "{\n}", "34241", "Permitted Site", "Pyrus kawakamii :: Evergreen Pear", "9 Chattanooga St", "3", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1997-07-07T00:00:00", null, null, "Permit Number 38051", "6004714.42221556", "2103615.95230322", "37.7563954143949", "-122.426681158586", [ null, "37.7563954281986", "-122.426681158576", null, false ] ]
+, [ 53075, "67BBAE4E-3DE9-42FA-B31D-0650A5BB9B0A", 53075, 1432222843, "403253", 1432222843, "403253", "{\n}", "58413", "Permitted Site", "Tree(s) ::", "9 Central Ave", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1979-03-19T00:00:00", null, null, "Permit Number 17548", "5999959.03336557", "2108318.23554105", "37.7690367182779", "-122.443464665755", [ null, "37.7690367320693", "-122.443464665745", null, false ] ]
+, [ 52619, "2E3A0227-CE8B-499B-967F-3CDAAF8D401C", 52619, 1432222843, "403253", 1432222843, "403253", "{\n}", "57939", "Permitted Site", "Tree(s) ::", "9 Byron Ct", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1977-06-24T00:00:00", null, null, "Permit Number 16898", "5999437.14294834", "2086694.43505528", "37.7096331315912", "-122.4437161646", [ null, "37.7096331454402", "-122.44371616459", null, false ] ]
+, [ 49351, "4DAE3FDD-800D-47A9-B4C4-CC6F548A566C", 49351, 1432222840, "403253", 1432222840, "403253", "{\n}", "54602", "Permitted Site", "Tree(s) ::", "9 Broderick St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, "1972-07-18T00:00:00", null, null, "Permit Number 10425", "6001366.18346921", "2108717.79509064", "37.770213956935", "-122.438626063816", [ null, "37.7702139707253", "-122.438626063806", null, false ] ]
+, [ 1606, "1F7E255B-DD91-4F33-9BB7-140A7FE1FC3F", 1606, 1432222802, "403253", 1432222802, "403253", "{\n}", "1915", "DPW Maintained", "Metrosideros excelsa :: New Zealand Xmas Tree", "9 Bell Ct", "2", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "6", "3X3", null, "6016631.8921901", "2095265.2766477", "37.7341327371653", "-122.384884235042", [ null, "37.7341327509905", "-122.384884235032", null, false ] ]
+, [ 42852, "272CF75B-F330-4C6F-B5A7-058AF7FDC63C", 42852, 1432222835, "403253", 1432222835, "403253", "{\n}", "47929", "Permitted Site", "Arbutus 'Marina' :: Hybrid Strawberry Tree", "9 Bella Vista Way", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "2002-06-26T00:00:00", null, null, "Permit Number 45665", "5998759.92955823", "2096891.85285353", "37.7375942261205", "-122.44678998565", [ null, "37.7375942399424", "-122.44678998564", null, false ] ]
+, [ 81099, "FBC5B469-217C-44EF-9A00-9258AD0687B3", 81099, 1432222867, "403253", 1432222867, "403253", "{\n}", "104331", "Undocumented", "Ficus nitida :: Laurel Fig", "9 Beaver St", "2", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, null, null, "3x3", null, "6002844", "2106791", "37.7650074058753", "-122.433376604069", [ null, "37.7650074196706", "-122.433376604059", null, false ] ]
+, [ 81098, "B402E389-452D-4B35-84FC-7B2AD8FE0945", 81098, 1432222867, "403253", 1432222867, "403253", "{\n}", "104330", "Undocumented", "Tree(s) ::", "9 Beaver St", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, null, null, "3x3", null, "6002844", "2106791", "37.7650074058753", "-122.433376604069", [ null, "37.7650074196706", "-122.433376604059", null, false ] ]
+, [ 27106, "E2116BE3-F34D-4075-9E83-5BE57C91462E", 27106, 1432222822, "403253", 1432222822, "403253", "{\n}", "31784", "Permitted Site", "Pittosporum undulatum :: Victorian Box", "9 Alpine Ter", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", "FUF", "1996-02-10T00:00:00", null, null, "Permit Number 35255", "6001636.56411115", "2108670.90180051", "37.7701005769541", "-122.437687461859", [ null, "37.7701005907444", "-122.437687461849", null, false ] ]
+, [ 19987, "533B72CE-C6B1-4868-BBCD-BAE5A4D7687E", 19987, 1432222816, "403253", 1432222816, "403253", "{\n}", "23617", "DPW Maintained", "Platanus x hispanica :: Sycamore: London Plane", "99X Vicente St", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "15", "3x3", null, "5992931.1771373", "2097763.0006234", "37.7396514793132", "-122.467005897689", [ null, "37.739651493133", "-122.467005897679", null, false ] ]
+, [ 19988, "DFF7BC20-2432-47CA-8BEB-63F29E5591D0", 19988, 1432222816, "403253", 1432222816, "403253", "{\n}", "23618", "DPW Maintained", "Platanus x hispanica :: Sycamore: London Plane", "99X Vicente St", "2", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "15", "3x3", null, "5992931.1771373", "2097763.0006234", "37.7396514793132", "-122.467005897689", [ null, "37.739651493133", "-122.467005897679", null, false ] ]
+, [ 82448, "0E5670D5-F7D0-4099-9AED-090FE54AF3EB", 82448, 1432222867, "403253", 1432222867, "403253", "{\n}", "106170", "Undocumented", "Corymbia ficifolia :: Red Flowering Gum", "99X THOR AVE", "1", "Sidewalk: Curb side : Cutout", "Tree", "Private", null, null, "24", "4x4", null, "6002346", "2095994", "37.7353331366469", "-122.434327078202", [ null, "37.7353331504709", "-122.434327078192", null, false ] ]
+, [ 20704, "59706C23-938D-4DAA-9670-7C38682423F9", 20704, 1432222817, "403253", 1432222817, "403253", "{\n}", "24476", "DPW Maintained", "Callistemon viminalis :: Weeping Bottlebrush", "99X Sussex St", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, null, "12", "3X3", null, "6002281.2265789", "2096676.7830479", "37.7372042247503", "-122.43459982975", [ null, "37.7372042385725", "-122.434599829739", null, false ] ]
+, [ 76869, "1B22CF11-468C-45BA-9EEA-F350A41E8C93", 76869, 1432222863, "403253", 1432222863, "403253", "{\n}", "99097", "Significant Tree", "Acacia melanoxylon :: Blackwood Acacia", "99X Santa Monica Way", "1", "Sidewalk: Curb side : Yard", "Tree", "Private", null, null, null, null, null, "5994003.8", "2097131.6", "37.7379796635799", "-122.463251452094", [ null, "37.7379796774014", "-122.463251452084", null, false ] ]
+, [ 20670, "7D9C19B3-25C7-4094-9023-D0BA938FACA5", 20670, 1432222817, "403253", 1432222817, "403253", "{\n}", "24433", "DPW Maintained", "Melaleuca quinquenervia :: Cajeput", "99X Peter Yorke Way", "1", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "2002-04-29T00:00:00", "3", "3X3", null, "6005916.1529", "2114537.1027597", "37.7864501414891", "-122.423301466307", [ null, "37.7864501552636", "-122.423301466297", null, false ] ]
+, [ 20671, "8CA5CBCF-EE4D-4353-9DA5-19FF97295F6C", 20671, 1432222817, "403253", 1432222817, "403253", "{\n}", "24434", "DPW Maintained", "Melaleuca quinquenervia :: Cajeput", "99X Peter Yorke Way", "2", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "2002-04-29T00:00:00", "3", "3X3", null, "6005916.1529", "2114537.1027597", "37.7864501414891", "-122.423301466307", [ null, "37.7864501552636", "-122.423301466297", null, false ] ]
+, [ 20672, "19A9B0B3-EC31-41B1-BC1B-54B8B9F67AED", 20672, 1432222817, "403253", 1432222817, "403253", "{\n}", "24437", "DPW Maintained", "Melaleuca quinquenervia :: Cajeput", "99X Peter Yorke Way", "5", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "1995-05-20T00:00:00", "6", "3X3", null, "6005916.1529", "2114537.1027597", "37.7864501414891", "-122.423301466307", [ null, "37.7864501552636", "-122.423301466297", null, false ] ]
+, [ 20673, "B82D95EF-1FA9-417C-B4D1-4EC12BB39C3D", 20673, 1432222817, "403253", 1432222817, "403253", "{\n}", "24438", "DPW Maintained", "Melaleuca quinquenervia :: Cajeput", "99X Peter Yorke Way", "6", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "1995-05-20T00:00:00", "6", "3X3", null, "6005916.1529", "2114537.1027597", "37.7864501414891", "-122.423301466307", [ null, "37.7864501552636", "-122.423301466297", null, false ] ]
+, [ 20675, "45B7B658-681F-4DC8-8E84-07C4D6D60ACB", 20675, 1432222817, "403253", 1432222817, "403253", "{\n}", "24440", "DPW Maintained", "Melaleuca quinquenervia :: Cajeput", "99X Peter Yorke Way", "8", "Sidewalk: Curb side : Cutout", "Tree", "DPW", null, "1995-05-20T00:00:00", "6", "3X3", null, "6005916.1529", "2114537.1027597", "37.7864501414891", "-122.423301466307", [ null, "37.7864501552636", "-122.423301466297", null, false ] ]

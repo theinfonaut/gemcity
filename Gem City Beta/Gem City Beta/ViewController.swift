@@ -6,23 +6,78 @@
 //  Copyright (c) 2015 Edrick Pascual. All rights reserved.
 //
 
+// tree locations in SF: https://data.sfgov.org/resource/337t-q2b4.json
+
+
 import UIKit
 import MapKit
-import CoreLocation
+//import CoreLocation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var theMap: MKMapView!
-    
+
+    let regionRadius: CLLocationDistance = 1000
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // set initial location in SF
+        let initialLocation = CLLocation(latitude: 37.7596429, longitude: -122.410573)
+        centerMapOnLocation(initialLocation)
+
+        loadInitialData()
+        theMap.addAnnotations(alltrees)
+        
+        theMap.delegate = self
+        
+        // show trees on map
+//        let trees = Trees(treeid: "01010",
+//            planttype: "Eucalyptus sideroxylon :: Red Ironbark",
+//            coordinate: CLLocationCoordinate2D(latitude: 37.7392189485182, longitude: -122.377869364283))
+//        theMap.addAnnotation(trees)
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var alltrees = [Trees]()
+    func loadInitialData() {
+        // 1
+        let fileName = NSBundle.mainBundle().pathForResource("SFTrees", ofType: "json");
+
+        var readError : NSError?
+        var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
+            error: &readError)!
+        
+        // 2
+        var error: NSError?
+        let jsonObject: AnyObject! = NSJSONSerialization.JSONObjectWithData(data,
+            options: NSJSONReadingOptions(0), error: &error)
+        
+        // 3
+        if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
+            // 4
+            let jsonData = JSONValue.fromObject(jsonObject)?["data"]?.array {
+                for treesJSON in jsonData {
+                    if let treesJSON = treesJSON.array,
+                        // 5
+                        trees = Trees.fromJSON(treesJSON) {
+                            alltrees.append(trees)
+                }
+            }
+        }
     }
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        theMap.setRegion(coordinateRegion, animated: true)
+    }
+
+    
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+//    }
 
 
 }
-
