@@ -11,36 +11,39 @@
 
 import UIKit
 import MapKit
-//import CoreLocation
+import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var theMap: MKMapView!
+
+
     
-//    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
+//<<<<<<< HEAD
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
 
-=======
+//=======
 //        locationManager.delegate = self
 //        locationManager.desiredAccuracy = kCLLocationAccuracyBest
 //        locationManager.requestWhenInUseAuthorization()
 //        locationManager.startUpdatingLocation()
        
         // LC - set initial location in SF
-        let initialLocation = CLLocation(latitude: 37.7596429, longitude: -122.410573)
+        let initialLocation = CLLocation(latitude: 37.7697160, longitude: -122.4534060)
         centerMapOnLocation(initialLocation)
         
         loadInitialData()
         theMap.addAnnotations(alltrees)
         theMap.delegate = self
+        
+ 
     }
 
         func centerMapOnLocation(location: CLLocation) {
@@ -48,40 +51,47 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             regionRadius * 2.0, regionRadius * 2.0)
             theMap.setRegion(coordinateRegion, animated: true)
         }
->>>>>>> master
+//>>>>>>> master
+
     
         let regionRadius: CLLocationDistance = 200
     
 
     
     
-//    // this method will be call everytime the phone registers a new location
-//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-//        
-//        var userLocation:CLLocation = locations[0] as! CLLocation
-//        
-//        var latitude = userLocation.coordinate.latitude
-//        var longitude = userLocation.coordinate.longitude
-//        
-//        // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
-//        var latDelta:CLLocationDegrees = 0.002
-//        
-//        var lonDelta:CLLocationDegrees = 0.002
-//        
-//        // Span - combination of latdelta and londelta
-//        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-//        
-//        // Location - coordinates based on longtitude and latitude of user
-//        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-//        
-//        // Region based on combining the location and span vars
-//        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-//        
-//        // Set the area of map region - self since its inside the fun
-//        self.theMap.setRegion(region, animated: true)
-//        
-//        println(locations)
-//    }
+    // this method will be call everytime the phone registers a new location
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        
+        var userLocation:CLLocation = locations[0] as! CLLocation
+        
+        var latitude = userLocation.coordinate.latitude
+        var longitude = userLocation.coordinate.longitude
+        
+        // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
+        var latDelta:CLLocationDegrees = 0.002
+        
+        var lonDelta:CLLocationDegrees = 0.002
+        
+        // Span - combination of latdelta and londelta
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
+        
+        // Location - coordinates based on longtitude and latitude of user
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        // Region based on combining the location and span vars
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+        
+        // Set the area of map region - self since its inside the fun
+        self.theMap.setRegion(region, animated: true)
+        
+        println(locations)
+        
+        
+        // notifying when entering a desired area
+      
+
+      
+    }
 
 
 // get tree data from json
@@ -111,6 +121,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
     }
+    
+    
+}
     
 
 
