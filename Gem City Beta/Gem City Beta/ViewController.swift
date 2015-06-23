@@ -6,9 +6,6 @@
 //  Copyright (c) 2015 Edrick Pascual. All rights reserved.
 //
 
-// tree locations in SF: https://data.sfgov.org/resource/337t-q2b4.json
-
-
 import UIKit
 import MapKit
 import CoreLocation
@@ -16,46 +13,19 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var theMap: MKMapView!
-
-
     
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//<<<<<<< HEAD
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-
-//=======
-//        locationManager.delegate = self
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.requestWhenInUseAuthorization()
-//        locationManager.startUpdatingLocation()
-       
-        // LC - set initial location in SF
-        let initialLocation = CLLocation(latitude: 37.7697160, longitude: -122.4534060)
-        centerMapOnLocation(initialLocation)
-        
-        loadInitialData()
-        theMap.addAnnotations(alltrees)
-        theMap.delegate = self
-        
- 
+    
+    
     }
-
-        func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 2.0, regionRadius * 2.0)
-            theMap.setRegion(coordinateRegion, animated: true)
-        }
-//>>>>>>> master
-
-    
-        let regionRadius: CLLocationDistance = 200
-    
 
     
     
@@ -84,48 +54,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Set the area of map region - self since its inside the fun
         self.theMap.setRegion(region, animated: true)
         
+        
         println(locations)
         
         
-        // notifying when entering a desired area
-      
+        
+    }
 
-      
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
 
-// get tree data from json
-    var alltrees = [Trees]()
-    func loadInitialData() {
-        // 1
-        let fileName = NSBundle.mainBundle().pathForResource("SFTrees", ofType: "json");
-
-        var readError : NSError?
-        var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
-            error: &readError)!
-        
-        // 2
-        var error: NSError?
-        let jsonObject: AnyObject! = NSJSONSerialization.JSONObjectWithData(data,
-            options: NSJSONReadingOptions(0), error: &error)
-        
-        // 3
-        if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
-            // 4
-            let jsonArray = jsonObject["data"] as? [NSArray] {
-                for treesJSON in jsonArray
-                {
-                    if let trees = Trees.fromJSON(treesJSON) {
-                        alltrees.append(trees)
-                    }
-                }
-            }
-    }
-    
-    
 }
-    
 
-
-    
-}
