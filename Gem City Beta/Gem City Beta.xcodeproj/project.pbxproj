@@ -15,6 +15,9 @@
 		619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619240731B34D2020049EEBF /* LaunchScreen.xib */; };
 		619240811B34D2020049EEBF /* Gem_City_BetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */; };
 		6192408B1B34D2090049EEBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6192408A1B34D2090049EEBF /* MapKit.framework */; };
+		DAEBD47C1B38A61A00D67504 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEBD47B1B38A61A00D67504 /* Trees.swift */; };
+		DAEBD47E1B38A8A500D67504 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEBD47D1B38A8A500D67504 /* VCMapView.swift */; };
+		DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = DAEBD4811B38EC2F00D67504 /* SFTrees.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		6192407F1B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem_City_BetaTests.swift; sourceTree = "<group>"; };
 		6192408A1B34D2090049EEBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DAEBD47B1B38A61A00D67504 /* Trees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
+		DAEBD47D1B38A8A500D67504 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		DAEBD4811B38EC2F00D67504 /* SFTrees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFTrees.json; path = "Gem City Beta/SFTrees.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		619240591B34D2020049EEBF = {
 			isa = PBXGroup;
 			children = (
+				DAEBD4811B38EC2F00D67504 /* SFTrees.json */,
 				6192408A1B34D2090049EEBF /* MapKit.framework */,
 				619240641B34D2020049EEBF /* Gem City Beta */,
 				6192407D1B34D2020049EEBF /* Gem City BetaTests */,
@@ -85,6 +92,8 @@
 			children = (
 				619240671B34D2020049EEBF /* AppDelegate.swift */,
 				6192406C1B34D2020049EEBF /* ViewController.swift */,
+				DAEBD47D1B38A8A500D67504 /* VCMapView.swift */,
+				DAEBD47B1B38A61A00D67504 /* Trees.swift */,
 				6192406E1B34D2020049EEBF /* Main.storyboard */,
 				619240711B34D2020049EEBF /* Images.xcassets */,
 				619240731B34D2020049EEBF /* LaunchScreen.xib */,
@@ -168,6 +177,7 @@
 				TargetAttributes = {
 					619240611B34D2020049EEBF = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 3FZ36259FX;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -204,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */,
 				619240701B34D2020049EEBF /* Main.storyboard in Resources */,
 				619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */,
 				619240721B34D2020049EEBF /* Images.xcassets in Resources */,
@@ -225,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6192406D1B34D2020049EEBF /* ViewController.swift in Sources */,
+				DAEBD47C1B38A61A00D67504 /* Trees.swift in Sources */,
+				DAEBD47E1B38A8A500D67504 /* VCMapView.swift in Sources */,
 				6192406B1B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld in Sources */,
 				619240681B34D2020049EEBF /* AppDelegate.swift in Sources */,
 			);
@@ -355,9 +368,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Gem City Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -365,9 +381,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Gem City Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -424,6 +443,7 @@
 				619240861B34D2020049EEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City BetaTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +452,7 @@
 				619240891B34D2020049EEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
