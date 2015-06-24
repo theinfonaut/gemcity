@@ -14,10 +14,10 @@ import MapKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-
+    
     @IBOutlet weak var theMap: MKMapView!
     
-var locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ var locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-       
+        
         // LC - set initial location in SF
         let initialLocation = CLLocation(latitude: 37.7596429, longitude: -122.410573)
         centerMapOnLocation(initialLocation)
@@ -35,16 +35,16 @@ var locationManager = CLLocationManager()
         theMap.addAnnotations(alltrees)
         theMap.delegate = self
     }
-
-        func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
-            theMap.setRegion(coordinateRegion, animated: true)
-        }
+        theMap.setRegion(coordinateRegion, animated: true)
+    }
     
-        let regionRadius: CLLocationDistance = 200
+    let regionRadius: CLLocationDistance = 200
     
-
+    
     
     
     // this method will be call everytime the phone registers a new location
@@ -73,20 +73,20 @@ var locationManager = CLLocationManager()
         self.theMap.setRegion(region, animated: true)
         
         println(locations)
-     
         
-    
+        
+        
         
         
     }
-
-
-// get tree data from json
+    
+    
+    // get tree data from json
     var alltrees = [Trees]()
     func loadInitialData() {
         // 1
         let fileName = NSBundle.mainBundle().pathForResource("SFTrees", ofType: "json");
-
+        
         var readError : NSError?
         var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
             error: &readError)!
@@ -106,7 +106,7 @@ var locationManager = CLLocationManager()
                         alltrees.append(trees)
                     }
                 }
-            }
+        }
         // collecting "gems" in this case trees
         
         func collectingAnnotations (manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
@@ -114,14 +114,21 @@ var locationManager = CLLocationManager()
             
             var latitude = userLocation.coordinate.latitude
             var longitude = userLocation.coordinate.longitude
-                    var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+            var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             var radius:CLCircularRegion = CLCircularRegion(center: location, radius: 30, identifier: "SFTrees")
+            let locattionnotification = UILocalNotification()
+            locattionnotification.alertBody = "Collected!"
+            locattionnotification.regionTriggersOnce = false
+            locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
+                latitude, longitude: longitude), radius: 100.0, identifier: "SFTrees")
+            UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
+    
             
         }
-    
+        
     }
     
-
-
+    
+    
     
 }
