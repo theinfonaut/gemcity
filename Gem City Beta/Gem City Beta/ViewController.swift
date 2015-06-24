@@ -86,7 +86,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func loadInitialData() {
         // 1
         let fileName = NSBundle.mainBundle().pathForResource("SFTrees", ofType: "json");
-        
         var readError : NSError?
         var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
             error: &readError)!
@@ -115,12 +114,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             var latitude = userLocation.coordinate.latitude
             var longitude = userLocation.coordinate.longitude
             var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-            var radius:CLCircularRegion = CLCircularRegion(center: location, radius: 30, identifier: "SFTrees")
+            var radius:CLCircularRegion = CLCircularRegion(center: location, radius: 30, identifier: "trees")
             let locattionnotification = UILocalNotification()
             locattionnotification.alertBody = "Collected!"
             locattionnotification.regionTriggersOnce = false
             locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
-                latitude, longitude: longitude), radius: 100.0, identifier: "SFTrees")
+                latitude, longitude: longitude), radius: 100.0, identifier: "trees")
             UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
     
             
