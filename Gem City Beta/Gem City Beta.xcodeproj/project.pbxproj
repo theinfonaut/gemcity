@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39D66E331B3BB01300475F1E /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 39D66E321B3BB01300475F1E /* TestLocations.gpx */; };
 		619240681B34D2020049EEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240671B34D2020049EEBF /* AppDelegate.swift */; };
 		6192406B1B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619240691B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld */; };
 		6192406D1B34D2020049EEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192406C1B34D2020049EEBF /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39D66E321B3BB01300475F1E /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TestLocations.gpx; path = ../../../../../../Downloads/TestLocations.gpx; sourceTree = "<group>"; };
 		619240621B34D2020049EEBF /* Gem City Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gem City Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619240661B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240671B34D2020049EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				619240661B34D2020049EEBF /* Info.plist */,
+				39D66E321B3BB01300475F1E /* TestLocations.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */,
 				619240701B34D2020049EEBF /* Main.storyboard in Resources */,
 				619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */,
+				39D66E331B3BB01300475F1E /* TestLocations.gpx in Resources */,
 				619240721B34D2020049EEBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
