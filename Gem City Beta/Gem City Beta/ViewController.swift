@@ -36,7 +36,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.delegate = self
           theMap.showsUserLocation = true
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(initialLocation.coordinate.latitude, initialLocation.coordinate.longitude)
-        collectingAnnotations(location)
+        collectingAnnotations(initialLocation)
         //locationManagerTemp(locationManager, didUpdateLocations: alltrees)
     }
     
@@ -69,7 +69,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Location - coordinates based on longtitude and latitude of user
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-        collectingAnnotations(location)
+  //      collectingAnnotations(location)
         
         // Region based on combining the location and span vars
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
@@ -86,7 +86,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //
         
     }
-    
+    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+        collectingAnnotations(newLocation)
+    }
     
     // get tree data from json
     var alltrees = [Trees]()
@@ -118,19 +120,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func collectingAnnotations(userLocation2D: CLLocationCoordinate2D) {
+    func collectingAnnotations(userLocation: CLLocation) {
         
         
-        var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
+       // var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
         
         for (var i = 0; i < alltrees.count; i++) {
             let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
             
             if (userLocation.distanceFromLocation(currentTreeLocation) < 1000) {
                 //they collect the gem
-                println("collected")
+                println(alltrees[i].coordinate.latitude)
+                println(alltrees[i].coordinate.longitude)
             }
+    
         }
+
         
         
         
