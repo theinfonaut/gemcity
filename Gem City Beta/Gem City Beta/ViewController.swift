@@ -31,6 +31,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let initialLocation = CLLocation(latitude: 37.7596429, longitude: -122.410573)
         centerMapOnLocation(initialLocation)
         
+        
         loadInitialData()
         theMap.addAnnotations(alltrees)
         theMap.delegate = self
@@ -105,30 +106,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     if let trees = Trees.fromJSON(treesJSON) {
                         alltrees.append(trees)
                     }
+                   
                 }
         }
         // collecting "gems" in this case trees
-        
-        func collectingAnnotations (manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-            var userLocation:CLLocation = locations[0] as! CLLocation
-            
-            var latitude = userLocation.coordinate.latitude
-            var longitude = userLocation.coordinate.longitude
-            var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-            var radius:CLCircularRegion = CLCircularRegion(center: location, radius: 30, identifier: "SFTrees")
-            let locattionnotification = UILocalNotification()
-            locattionnotification.alertBody = "Collected!"
-            locattionnotification.regionTriggersOnce = false
-            locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
-                latitude, longitude: longitude), radius: 100.0, identifier: "SFTrees")
-            UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
-    
-            
-        }
-        
-    }
-    
-    
-    
-    
+
 }
+
+            //Desired accuracy .. didupdatelocation - called to check whats inside of the geofence
+            //line 96 - 118
+
+            //Be able to collect and count -- would this go in the same function?
+            //We want it to be varified that they collected the object with
+            //Does radius code work? where could we put a println?
