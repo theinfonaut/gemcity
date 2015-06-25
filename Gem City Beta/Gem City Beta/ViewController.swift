@@ -51,41 +51,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     
-    // this method will be call everytime the phone registers a new location
-    func locationManagerTemp(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        
-        var userLocation:CLLocation = locations[0] as! CLLocation
-        
-        var latitude = userLocation.coordinate.latitude
-        var longitude = userLocation.coordinate.longitude
-        
-        // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
-        var latDelta:CLLocationDegrees = 0.002
-        
-        var lonDelta:CLLocationDegrees = 0.002
-        
-        // Span - combination of latdelta and londelta
-        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-        
-        // Location - coordinates based on longtitude and latitude of user
-        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-  //      collectingAnnotations(location)
-        
-        // Region based on combining the location and span vars
-        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-        
-        // Set the area of map region - self since its inside the fun
-        self.theMap.setRegion(region, animated: false)
-        
-        println(locations)
-        
-      
-        
-        //        MKPinAnnotationView.customPinView = UIImage imageNamed:@"myCarImage.png"];
-        //
-        //
-        
-    }
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         collectingAnnotations(newLocation)
     }
@@ -115,6 +80,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     }
                 }
         }
+        
+        
         // collecting "gems" in this case trees
         
     }
@@ -126,95 +93,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
        // var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
         
         for (var i = 0; i < alltrees.count; i++) {
+            if alltrees[i].hasBeenCollected == false {
             let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
             
-            if (userLocation.distanceFromLocation(currentTreeLocation) < 1000) {
+            if (userLocation.distanceFromLocation(currentTreeLocation) < 30) {
                 //they collect the gem
                 println(alltrees[i].coordinate.latitude)
                 println(alltrees[i].coordinate.longitude)
+                alltrees[i].hasBeenCollected = true
             }
+            }
+          
     
         }
 
         
-        
-        
-        //            let locattionnotification = UILocalNotification()
-        //            locattionnotification.alertBody = "Collected!"
-        //            locattionnotification.regionTriggersOnce = false
-        //            locattionnotification.region = CLCircularRegion(circularRegionWithCenter: CLLocationCoordinate2D(latitude:
-        //                latitude, longitude: longitude), radius: 30, identifier: "trees")
-        //            UIApplication.sharedApplication().scheduleLocalNotification(locattionnotification)
-        
+    
         
     }
-
-    
-//    var manager: CLLocationManager?
-//
-//    @IBOutlet weak var mapView: MKMapView!
-//    @IBOutlet weak var address: UILabel!
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        manager = CLLocationManager()
-//        manager?.delegate = self;
-//        manager?.desiredAccuracy = kCLLocationAccuracyBest
-//        
-//    }
-//    
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//    
-//    
-//    @IBAction func getLocation(sender: AnyObject) {
-//        let available = CLLocationManager.isMonitoringAvailableForClass(CLCircularRegion)
-//        manager?.requestWhenInUseAuthorization()
-//        manager?.startUpdatingLocation()
-//        
-//        
-//    }
-//    
-//    
-//    @IBAction func regionMonitoring(sender: AnyObject) {
-//        manager?.requestAlwaysAuthorization()
-//        
-//        let currRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: 37.411822, longitude: -121.941125), radius: 200, identifier: "Home")
-//        manager?.startMonitoringForRegion(currRegion)
-//        
-//    }
-//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-//        manager.stopUpdatingLocation()
-//        let location = locations[0] as! CLLocation
-//        CLPlacemark(
-//                    let placeMarks = alltrees as [CLPlacemark]
-//            let loc: CLPlacemark = placeMarks[0]
-//            
-//            self.mapView.centerCoordinate = location.coordinate
-//            let addr = loc.locality
-//            self.address.text = addr
-//            let reg = MKCoordinateRegionMakeWithDistance(location.coordinate, 1500, 1500)
-//            self.mapView.setRegion(reg, animated: true)
-//            self.mapView.showsUserLocation = true
-//            
-//        }
-//    }
-//    
-//    func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
-//        NSLog("Entering region")
-//    }
-//    
-//    func locationManager(manager: CLLocationManager!, didExitRegion region: CLRegion!) {
-//        NSLog("Exit region")
-//    }
-//    
-//    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-//        NSLog("\(error)")
-//    }
-
-    
-
 
 
 
