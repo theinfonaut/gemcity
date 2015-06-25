@@ -14,6 +14,15 @@ import MapKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
+    @IBAction func zoomToCurrentLocation(mapView: MKMapView) {
+        
+        if let coordinate = theMap.userLocation.location?.coordinate {
+            let region = MKCoordinateRegionMakeWithDistance(coordinate, 37.7596429, -122.410573)
+
+    }
+    }
+    
+    func zoomToUserLocationInMapView() {    }
     
     @IBOutlet weak var theMap: MKMapView!
     
