@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Gem City Beta
+//  Gem City
 //
 //  Created by Edrick Pascual on 6/19/15.
 //  Copyright (c) 2015 Edrick Pascual. All rights reserved.
@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Fabric.with([Crashlytics()])
         return true
     }
 
