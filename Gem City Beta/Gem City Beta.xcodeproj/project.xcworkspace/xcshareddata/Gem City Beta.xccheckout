@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EAFF2596-B1AC-4E89-8D05-89FE1F780957</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Gem City Beta</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1D0F6C81389FE4A94162738B3746A469EFFE4431</key>
 		<string>https://github.com/theinfonaut/gemcity.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Gem City Beta/Gem City Beta.xcodeproj/project.xcworkspace</string>
+	<string>Gem City Beta/Gem City Beta.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1D0F6C81389FE4A94162738B3746A469EFFE4431</key>

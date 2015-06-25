@@ -13,6 +13,7 @@ class Trees: NSObject, MKAnnotation {
     let treeid: String
     let planttype: String
     let coordinate: CLLocationCoordinate2D
+    var hasBeenCollected: Bool = false
     
     init(treeid: String, planttype: String, coordinate: CLLocationCoordinate2D) {
         self.treeid = treeid
