@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>927936F1-C73F-4EAE-9AEF-A9EB975F5130</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1D0F6C81389FE4A94162738B3746A469EFFE4431</key>
+		<string>https://github.com/theinfonaut/gemcity.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Gem City Beta/Gem City.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1D0F6C81389FE4A94162738B3746A469EFFE4431</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/theinfonaut/gemcity.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1D0F6C81389FE4A94162738B3746A469EFFE4431</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1D0F6C81389FE4A94162738B3746A469EFFE4431</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gemcity</string>
+		</dict>
+	</array>
+</dict>
+</plist>
