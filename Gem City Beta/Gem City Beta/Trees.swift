@@ -22,9 +22,7 @@ class Trees: NSObject, MKAnnotation {
     super.init()
     }
     
-//    var subtitle: String {
-//        return planttype
-//    }
+
     
     class func fromJSON(json: NSArray) -> Trees? {
         // 1
@@ -57,7 +55,6 @@ class Trees: NSObject, MKAnnotation {
         }
         
     }
-    
-    // pinImage for all pins
+
 
 }
