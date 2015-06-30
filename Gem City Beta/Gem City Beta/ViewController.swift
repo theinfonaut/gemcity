@@ -16,7 +16,7 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var theMap: MKMapView!
-    
+ 
     @IBOutlet weak var score: UILabel!
     var locationManager = CLLocationManager()
     @IBAction func zoomToCurrentLocation(mapView: MKMapView) {
@@ -89,11 +89,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
             // 4
             let jsonArray = jsonObject["data"] as? [NSArray] {
+                var counter = 0
                 for treesJSON in jsonArray
                 {
                     if let trees = Trees.fromJSON(treesJSON) {
-                        alltrees.append(trees)
+                       
+                        if counter % 10 == 0 {
+                             alltrees.append(trees)
+                        }
                     }
+                    counter++
                 }
         }
         
@@ -104,16 +109,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func collectingAnnotations(userLocation: CLLocation) {
+//        var userRadius = MKMapRect(origin: MKMapPointForCoordinate(userLocation.coordinate), size: MKMapSize(width: 10000, height: 10000))
+//        let annotations = theMap.annotationsInMapRect(userRadius)
+//        println(annotations.count)
+//        for annotation in annotations {
+//        theMap.removeAnnotation(annotation as! MKAnnotation)
+       // }
+         var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
         
-        
-        // var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
-        //var alltreesTotal = 0
         for (var i = 0; i < alltrees.count; i++) {
             
             if alltrees[i].hasBeenCollected == false {
                 let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
                 
-                if (userLocation.distanceFromLocation(currentTreeLocation) < 1000) {
+                if (userLocation.distanceFromLocation(currentTreeLocation) < 300) {
                     //they collect the gem
                     println("lat: \(alltrees[i].coordinate.latitude) lon:  \(alltrees[i].coordinate.longitude)")
                     println("\(i)")
@@ -126,6 +135,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         }
+       
         score.text = "\(alltreesTotal)"
       
         }
