@@ -28,6 +28,15 @@
                                     <action selector="zoomToCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6b-7A-1Nc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giB-JZ-0b1">
+                                <rect key="frame" x="179" y="32" width="64" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="mPa-Jq-WSS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -38,6 +47,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="score" destination="giB-JZ-0b1" id="lIn-GR-XH9"/>
                         <outlet property="theMap" destination="wXo-xY-ZeX" id="djl-gH-SnY"/>
                     </connections>
                 </viewController>
