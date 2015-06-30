@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39D66E331B3BB01300475F1E /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 39D66E321B3BB01300475F1E /* TestLocations.gpx */; };
+		28B79DDE1B3BD70E000193D8 /* TestLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 28B79DDD1B3BD70E000193D8 /* TestLocations.gpx */; };
+		28B79DE01B3BD783000193D8 /* San_Francisco_Sights.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 28B79DDF1B3BD783000193D8 /* San_Francisco_Sights.gpx */; };
 		619240681B34D2020049EEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240671B34D2020049EEBF /* AppDelegate.swift */; };
 		6192406B1B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619240691B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld */; };
 		6192406D1B34D2020049EEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192406C1B34D2020049EEBF /* ViewController.swift */; };
@@ -32,7 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		39D66E321B3BB01300475F1E /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TestLocations.gpx; path = ../../../../../../Downloads/TestLocations.gpx; sourceTree = "<group>"; };
+		28B79DDD1B3BD70E000193D8 /* TestLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		28B79DDF1B3BD783000193D8 /* San_Francisco_Sights.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = San_Francisco_Sights.gpx; sourceTree = "<group>"; };
 		619240621B34D2020049EEBF /* Gem City Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gem City Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619240661B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240671B34D2020049EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +110,9 @@
 		619240651B34D2020049EEBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28B79DDD1B3BD70E000193D8 /* TestLocations.gpx */,
+				28B79DDF1B3BD783000193D8 /* San_Francisco_Sights.gpx */,
 				619240661B34D2020049EEBF /* Info.plist */,
-				39D66E321B3BB01300475F1E /* TestLocations.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,7 +223,8 @@
 				DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */,
 				619240701B34D2020049EEBF /* Main.storyboard in Resources */,
 				619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */,
-				39D66E331B3BB01300475F1E /* TestLocations.gpx in Resources */,
+				28B79DE01B3BD783000193D8 /* San_Francisco_Sights.gpx in Resources */,
+				28B79DDE1B3BD70E000193D8 /* TestLocations.gpx in Resources */,
 				619240721B34D2020049EEBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

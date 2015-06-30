@@ -1,22 +1,20 @@
 import UIKit
 import MapKit
 import CoreLocation
+import SpriteKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    @IBAction func zoomToCurrentLocation(mapView: MKMapView) {
-        
-        if let coordinate = theMap.userLocation.location?.coordinate {
-            let region = MKCoordinateRegionMakeWithDistance(coordinate, 37.7596429, -122.410573)
-            
-        }
+    @IBAction func zoomToCurrentLocation(sender: AnyObject) {
+        zoomToUserLocationInMapView(theMap)
     }
     
-    func zoomToUserLocationInMapView() {    }
-    
+    //Outlets
     @IBOutlet weak var theMap: MKMapView!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     
     var locationManager = CLLocationManager()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,20 +33,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.showsUserLocation = true
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(initialLocation.coordinate.latitude, initialLocation.coordinate.longitude)
         collectingAnnotations(initialLocation)
-        //locationManagerTemp(locationManager, didUpdateLocations: alltrees)
+        //locationManagerTemp(locationManager, didUpdateLocations: alltrees)3
+    }
+    
+    
+    func zoomToUserLocationInMapView(mapView: MKMapView) {
+        if let coordinate = theMap.userLocation.location?.coordinate {
+            let region = MKCoordinateRegionMakeWithDistance(coordinate, 10000, 10000)
+            theMap.setRegion(region, animated: false)
+        }
     }
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
-        theMap.setRegion(coordinateRegion, animated: false)
+        theMap.setRegion(coordinateRegion, animated: true)
     }
     
     let regionRadius: CLLocationDistance = 200
     
     
     
-    
+    //
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         collectingAnnotations(newLocation)
     }
@@ -87,7 +93,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func collectingAnnotations(userLocation: CLLocation) {
         
-        
         // var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
         
         for (var i = 0; i < alltrees.count; i++) {
@@ -99,17 +104,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     println(alltrees[i].coordinate.latitude)
                     println(alltrees[i].coordinate.longitude)
                     alltrees[i].hasBeenCollected = true
+                    
+                    
                 }
+
             }
-            
-            
+
         }
-        
-        
-        
-        
+     
+       
     }
     
-    
-    
-}
