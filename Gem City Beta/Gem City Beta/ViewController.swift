@@ -1,6 +1,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Parse
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
@@ -125,6 +126,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
+        var gameScore = PFObject(className: "GameScore")
+        gameScore["score"] = alltreesTotal
+        gameScore["playerName"] = PFUser.currentUser()?.objectId
+        gameScore.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                
+            } else {
+                
+            }
+        }
         score.text = "\(alltreesTotal)"
         
     }
