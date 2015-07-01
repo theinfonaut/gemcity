@@ -37,7 +37,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.addAnnotations(alltrees)
         theMap.delegate = self
         theMap.zoomEnabled = false
-        theMap.scrollEnabled = false
+        theMap.scrollEnabled = true
+        collectingAnnotations(initialLocation)
+
         
         //paning enabled, zoom enabled = false
     }
@@ -48,12 +50,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.setRegion(coordinateRegion, animated: false)
     }
     
-    let regionRadius: CLLocationDistance = 200
+//    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+//        collectingAnnotations(newLocation)
+//    }
+    
+    let regionRadius: CLLocationDistance = 150
     
     // this method will be call everytime the phone registers a new location
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-    
-        var userLocation:CLLocation = locations[0] as! CLLocation
+    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+        collectingAnnotations(newLocation)
+
+        //    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        var userLocation:CLLocation = newLocation
+        //[0] as! CLLocation
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
     
@@ -73,7 +82,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Set the area of map region - self since its inside the fun
         self.theMap.setRegion(region, animated: false)
     
-        println(location)
+        println(newLocation)
         }
     
     
@@ -96,15 +105,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
             // 4
             let jsonArray = jsonObject["data"] as? [NSArray] {
-                var counter = 0
+                //var counter = 0
                 for treesJSON in jsonArray
                 {
                     if let trees = Trees.fromJSON(treesJSON) {
-                        if counter % 10 == 0 {
+                        //if counter % 10 == 0 {
                         alltrees.append(trees)
-                        }
+                        //}
                     }
-                    counter++
+                    //counter++
                 }
         }
     }
@@ -116,16 +125,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //        for annotation in annotations {
         //        theMap.removeAnnotation(annotation as! MKAnnotation)
         // }
-    //var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
-        
+        var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+
         for (var i = 0; i < alltrees.count; i++) {
-            
+
             if alltrees[i].hasBeenCollected == false {
                 let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
-                
-                if (userLocation.distanceFromLocation(currentTreeLocation) < 400) {
+                if (userLocation.distanceFromLocation(currentTreeLocation) < 50) {
                     //they collect the gem
-                    println("lat: \(alltrees[i].coordinate.latitude) lon:  \(alltrees[i].coordinate.longitude)")
+                    println("lat: \(alltrees[i].coordinate.latitude) lon: \(alltrees[i].coordinate.longitude)")
                     println("\(i)")
                     alltrees[i].hasBeenCollected = true
                     alltreesTotal += 1
@@ -136,6 +144,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         }
+
         score.text = "\(alltreesTotal)"
     }
 }
