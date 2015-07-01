@@ -10,14 +10,16 @@
 
 import UIKit
 import MapKit
-//import CoreLocation
+import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var theMap: MKMapView!
+    @IBOutlet weak var score: UILabel!
     
-        var locationManager = CLLocationManager()
-    
+    var locationManager = CLLocationManager()
+    var alltreesTotal = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,44 +50,39 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let regionRadius: CLLocationDistance = 200
     
+    // this method will be call everytime the phone registers a new location
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     
+        var userLocation:CLLocation = locations[0] as! CLLocation
+        var latitude = userLocation.coordinate.latitude
+        var longitude = userLocation.coordinate.longitude
     
+        // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
+        var latDelta:CLLocationDegrees = 0.002
+        var lonDelta:CLLocationDegrees = 0.002
     
-        // this method will be call everytime the phone registers a new location
-        func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        // Span - combination of latdelta and londelta
+        var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
     
-            var userLocation:CLLocation = locations[0] as! CLLocation
+        // Location - coordinates based on longtitude and latitude of user
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
     
-            var latitude = userLocation.coordinate.latitude
-            var longitude = userLocation.coordinate.longitude
+        // Region based on combining the location and span vars
+        var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
     
-            // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
-            var latDelta:CLLocationDegrees = 0.002
+        // Set the area of map region - self since its inside the fun
+        self.theMap.setRegion(region, animated: false)
     
-            var lonDelta:CLLocationDegrees = 0.002
-    
-            // Span - combination of latdelta and londelta
-            var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-    
-            // Location - coordinates based on longtitude and latitude of user
-            var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
-    
-            // Region based on combining the location and span vars
-            var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
-    
-            // Set the area of map region - self since its inside the fun
-            self.theMap.setRegion(region, animated: false)
-    
-            println(locations)
+        println(location)
         }
     
     
     // get tree data from json
     var alltrees = [Trees]()
     func loadInitialData() {
+       
         // 1
         let fileName = NSBundle.mainBundle().pathForResource("SFTrees", ofType: "json");
-        
         var readError : NSError?
         var data: NSData = NSData(contentsOfFile: fileName!, options: NSDataReadingOptions(0),
             error: &readError)!
@@ -99,16 +96,46 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
             // 4
             let jsonArray = jsonObject["data"] as? [NSArray] {
+                var counter = 0
                 for treesJSON in jsonArray
                 {
                     if let trees = Trees.fromJSON(treesJSON) {
+                        if counter % 10 == 0 {
                         alltrees.append(trees)
+                        }
                     }
+                    counter++
                 }
         }
     }
     
-    
-    
-    
+    func collectingAnnotations(userLocation: CLLocation) {
+        //        var userRadius = MKMapRect(origin: MKMapPointForCoordinate(userLocation.coordinate), size: MKMapSize(width: 10000, height: 10000))
+        //        let annotations = theMap.annotationsInMapRect(userRadius)
+        //        println(annotations.count)
+        //        for annotation in annotations {
+        //        theMap.removeAnnotation(annotation as! MKAnnotation)
+        // }
+    //var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+        
+        for (var i = 0; i < alltrees.count; i++) {
+            
+            if alltrees[i].hasBeenCollected == false {
+                let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
+                
+                if (userLocation.distanceFromLocation(currentTreeLocation) < 400) {
+                    //they collect the gem
+                    println("lat: \(alltrees[i].coordinate.latitude) lon:  \(alltrees[i].coordinate.longitude)")
+                    println("\(i)")
+                    alltrees[i].hasBeenCollected = true
+                    alltreesTotal += 1
+                }
+                
+                if alltrees[i].hasBeenCollected == true {
+                    theMap.removeAnnotation(alltrees[i])
+                }
+            }
+        }
+        score.text = "\(alltreesTotal)"
+    }
 }

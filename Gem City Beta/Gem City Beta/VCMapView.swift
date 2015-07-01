@@ -10,6 +10,7 @@ import MapKit
 
 extension ViewController: MKMapViewDelegate {
     
+//    consider this update:
 //    didFinishLoading
 //    func mapViewDidFinishLoadingMap(mapView: MKMapView!) {
 //    }
@@ -26,8 +27,6 @@ extension ViewController: MKMapViewDelegate {
     // 2
                     dequeuedView.annotation = annotation
                     view = dequeuedView
-                    
-
             } else {
     // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
@@ -35,12 +34,8 @@ extension ViewController: MKMapViewDelegate {
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as! UIView
                 view.image = UIImage(named: "gem.png")
-
-
             }
-           
             return view
-
         }
         return nil
     }
