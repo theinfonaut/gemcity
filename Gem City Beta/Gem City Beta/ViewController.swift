@@ -39,8 +39,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.zoomEnabled = false
         theMap.scrollEnabled = true
         collectingAnnotations(initialLocation)
-
-        
         //paning enabled, zoom enabled = false
     }
     
@@ -50,17 +48,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.setRegion(coordinateRegion, animated: false)
     }
     
-//    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
-//        collectingAnnotations(newLocation)
-//    }
-    
-    let regionRadius: CLLocationDistance = 150
+    let regionRadius: CLLocationDistance = 100
     
     // this method will be call everytime the phone registers a new location
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         collectingAnnotations(newLocation)
 
-        //    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         var userLocation:CLLocation = newLocation
         //[0] as! CLLocation
         var latitude = userLocation.coordinate.latitude
@@ -125,7 +118,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //        for annotation in annotations {
         //        theMap.removeAnnotation(annotation as! MKAnnotation)
         // }
-        var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
+       // var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
 
         for (var i = 0; i < alltrees.count; i++) {
 
