@@ -1,20 +1,20 @@
 import UIKit
 import MapKit
 import CoreLocation
-import SpriteKit
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    @IBAction func zoomToCurrentLocation(sender: AnyObject) {
+    @IBOutlet weak var theMap: MKMapView!
+    
+    @IBOutlet weak var score: UILabel!
+    var locationManager = CLLocationManager()
+    @IBAction func zoomToCurrentLocation(mapView: MKMapView) {
         zoomToUserLocationInMapView(theMap)
     }
     
-    //Outlets
-    @IBOutlet weak var theMap: MKMapView!
-    @IBOutlet weak var scoreLabel: UILabel!
+    var alltreesTotal = 0
     
     
-    var locationManager = CLLocationManager()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,28 +33,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         theMap.showsUserLocation = true
         var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(initialLocation.coordinate.latitude, initialLocation.coordinate.longitude)
         collectingAnnotations(initialLocation)
-        //locationManagerTemp(locationManager, didUpdateLocations: alltrees)3
+        //locationManagerTemp(locationManager, didUpdateLocations: alltrees)
+        
+        
     }
     
-    
-    func zoomToUserLocationInMapView(mapView: MKMapView) {
+    func  zoomToUserLocationInMapView(mapView: MKMapView) {
         if let coordinate = theMap.userLocation.location?.coordinate {
-            let region = MKCoordinateRegionMakeWithDistance(coordinate, 10000, 10000)
-            theMap.setRegion(region, animated: false)
+            let region = MKCoordinateRegionMakeWithDistance(coordinate, 20, 20)
+            theMap.setRegion(region, animated: true)
         }
     }
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
-        theMap.setRegion(coordinateRegion, animated: true)
+        theMap.setRegion(coordinateRegion, animated: false)
     }
     
     let regionRadius: CLLocationDistance = 200
     
     
     
-    //
+    
     func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
         collectingAnnotations(newLocation)
     }
@@ -77,11 +78,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil,
             // 4
             let jsonArray = jsonObject["data"] as? [NSArray] {
+                var counter = 0
                 for treesJSON in jsonArray
                 {
                     if let trees = Trees.fromJSON(treesJSON) {
-                        alltrees.append(trees)
+                        
+                        if counter % 10 == 0 {
+                            alltrees.append(trees)
+                        }
                     }
+                    counter++
                 }
         }
         
@@ -92,26 +98,39 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func collectingAnnotations(userLocation: CLLocation) {
-        
-        // var userLocation = CLLocation(latitude: userLocation2D.latitude, longitude: userLocation2D.longitude)
+        //        var userRadius = MKMapRect(origin: MKMapPointForCoordinate(userLocation.coordinate), size: MKMapSize(width: 10000, height: 10000))
+        //        let annotations = theMap.annotationsInMapRect(userRadius)
+        //        println(annotations.count)
+        //        for annotation in annotations {
+        //        theMap.removeAnnotation(annotation as! MKAnnotation)
+        // }
+        var userLocation = CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
         
         for (var i = 0; i < alltrees.count; i++) {
+            
             if alltrees[i].hasBeenCollected == false {
                 let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude: alltrees[i].coordinate.longitude)
                 
-                if (userLocation.distanceFromLocation(currentTreeLocation) < 30) {
+                if (userLocation.distanceFromLocation(currentTreeLocation) < 300) {
                     //they collect the gem
-                    println(alltrees[i].coordinate.latitude)
-                    println(alltrees[i].coordinate.longitude)
+                    println("lat: \(alltrees[i].coordinate.latitude) lon:  \(alltrees[i].coordinate.longitude)")
+                    println("\(i)")
                     alltrees[i].hasBeenCollected = true
-                    
+                    alltreesTotal += 1
                     
                 }
-
+                if alltrees[i].hasBeenCollected == true {
+                    theMap.removeAnnotation(alltrees[i])
+                }
             }
-
         }
-     
-       
+        
+        score.text = "\(alltreesTotal)"
+        
     }
     
+    
+    
+}
+
+
