@@ -153,7 +153,7 @@
 				DAEBD4811B38EC2F00D67504 /* SFTrees.json */,
 				6161381C1B423D24003E124E /* parse-library-1.7.5 */,
 				6192408A1B34D2090049EEBF /* MapKit.framework */,
-				619240641B34D2020049EEBF /* Gem City Beta */,
+				619240641B34D2020049EEBF /* Gem City */,
 				6192407D1B34D2020049EEBF /* Gem City BetaTests */,
 				619240631B34D2020049EEBF /* Products */,
 			);
@@ -168,7 +168,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		619240641B34D2020049EEBF /* Gem City Beta */ = {
+		619240641B34D2020049EEBF /* Gem City */ = {
 			isa = PBXGroup;
 			children = (
 				619240671B34D2020049EEBF /* AppDelegate.swift */,
@@ -182,6 +182,7 @@
 				619240691B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld */,
 				619240651B34D2020049EEBF /* Supporting Files */,
 			);
+			name = "Gem City";
 			path = "Gem City Beta";
 			sourceTree = "<group>";
 		};
