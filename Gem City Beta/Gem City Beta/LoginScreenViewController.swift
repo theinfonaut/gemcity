@@ -18,11 +18,11 @@ class LoginScreenViewController: UIViewController {
     
     @IBOutlet var password: UITextField!
     
-    //@IBOutlet var signupButton: UIButton!
+    @IBOutlet var signupOutletButton: UIButton!
     
     @IBOutlet var registeredText: UILabel!
     
-    //@IBOutlet var loginButton: UIButton!
+    @IBOutlet var loginButton: UIButton!
     
     
     
@@ -46,6 +46,31 @@ class LoginScreenViewController: UIViewController {
     
     @IBAction func login(sender: AnyObject) {
         
+        if signupActive == true {
+            
+            signupOutletButton.setTitle("Login", forState: UIControlState.Normal)
+            
+            registeredText.text = "Not Registered"
+            
+            loginButton.setTitle("Sign Up", forState: UIControlState.Normal)
+            
+            signupActive = false
+        
+        } else {
+            
+            signupOutletButton.setTitle("Sign Up", forState: UIControlState.Normal)
+            
+            registeredText.text = "Already Registered"
+            
+            loginButton.setTitle("Login", forState: UIControlState.Normal)
+            
+            signupActive = true
+            
+            
+            
+        }
+        
+        
         
         
     }
@@ -58,7 +83,7 @@ class LoginScreenViewController: UIViewController {
             
         } else {
             
-            // MARK - Spinner
+            // MARK - Spinner display
             activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
             activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, 50, 50))
             activityIndicator.center = self.view.center
@@ -68,13 +93,19 @@ class LoginScreenViewController: UIViewController {
             activityIndicator.startAnimating()
             UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         
-            // MARK - User added
+            
+            var errorMessage = "Please try again later"
+            
+            // MARK - Check Login user
+            
+            if signupActive == true {
+            
+            // MARK - Add User for Parse
             
             var user = PFUser()
             user.username = username.text
             user.password = password.text
             
-            var errorMessage = "Please try again later"
             
             user.signUpInBackgroundWithBlock({ (success, error) -> Void in
                 
@@ -82,7 +113,9 @@ class LoginScreenViewController: UIViewController {
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
             
                 if error == nil {
+                    
                     // Signup successful
+                    self.performSegueWithIdentifier("login", sender: self)
                     
                 } else {
                     
@@ -98,53 +131,37 @@ class LoginScreenViewController: UIViewController {
                 
                 
             })
-    }
-    
-//            
-//            displayAlert("Error in form", message: "Please enter a username and password")
-
-
+            
+        } else {
                 
-//                        self.displayAlert("Failed SignUp", message: errorMessage)
-//                        
-//                    }
-//                    
-//                })
-//                
-//            } else {
-//                
-//                PFUser.logInWithUsernameInBackground(username.text, password: password.text, block: { (user, error) -> Void in
-//                    
-//                    self.activityIndicator.stopAnimating()
-//                    UIApplication.sharedApplication().endIgnoringInteractionEvents()
-//                    
-//                    if user != nil {
-//                        
-//                        // Logged In!
-//                        
-//                    } else {
-//                        
-//                        if let errorString = error!.userInfo?["error"] as? String {
-//                            
-//                            errorMessage = errorString
-//                            
-//                        }
-//                        
-//                        self.displayAlert("Failed Login", message: errorMessage)
-//                        
-//                    }
-//                    
-//                })
-//                
-//            }
-//            
-//        }
-//
-//        
-//        
-    
-    
-    
+            PFUser.logInWithUsernameInBackground(username.text, password: password.text, block: { (user, error) -> Void in
+                
+                self.activityIndicator.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                
+                if user != nil {
+                    
+                    //Logged in
+                    self.performSegueWithIdentifier("login", sender: self)
+                    
+                } else {
+                    
+                    if let errorString = error!.userInfo?["error"] as? String {
+                        
+                        errorMessage = errorString
+                        
+                    }
+                    
+                    self.displayAlert("Failed Login", message: errorMessage)
+                    
+                }
+                
+            })
+            
+            
+        }
+        
+    }
     
     
     

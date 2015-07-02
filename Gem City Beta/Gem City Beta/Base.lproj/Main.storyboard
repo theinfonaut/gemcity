@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="1010"/>
+            <point key="canvasLocation" x="154" y="325"/>
         </scene>
         <!--Login Screen View Controller-->
         <scene sceneID="5GL-pe-ZpC">
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0X-Mi-VgO">
-                                <rect key="frame" x="208" y="242" width="52" height="30"/>
+                                <rect key="frame" x="198" y="242" width="62" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -94,14 +94,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="F0X-Mi-VgO" id="YwZ-rv-kSM"/>
                         <outlet property="password" destination="KWd-fG-vRe" id="Fna-6c-gYM"/>
                         <outlet property="registeredText" destination="WB9-U7-d9Q" id="zW7-Xa-CXb"/>
+                        <outlet property="signupOutletButton" destination="EBc-st-Pv5" id="f1C-Cw-OMA"/>
                         <outlet property="username" destination="YKE-XS-wGZ" id="9ID-4w-WwV"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="login" id="tXo-kA-eBe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rg8-4X-6tZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="325"/>
+            <point key="canvasLocation" x="-517" y="325"/>
         </scene>
     </scenes>
 </document>

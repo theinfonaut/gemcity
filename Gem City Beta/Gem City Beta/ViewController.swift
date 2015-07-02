@@ -10,9 +10,12 @@
 
 import UIKit
 import MapKit
-import CoreLocation
+import Parse
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    
+    var usernames = [""]
+    var userids = [""]
 
     @IBOutlet weak var theMap: MKMapView!
     
@@ -21,6 +24,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
