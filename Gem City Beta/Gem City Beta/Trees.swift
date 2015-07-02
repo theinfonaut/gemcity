@@ -20,16 +20,16 @@ class Trees: NSObject, MKAnnotation {
         self.planttype = planttype
         self.coordinate = coordinate
         
-    super.init()
+        super.init()
     }
     
-//    var subtitle: String {
-//        return planttype
-//    }
+    //    var subtitle: String {
+    //        return planttype
+    //    }
     
     class func fromJSON(json: NSArray) -> Trees? {
         // 1
-      
+        
         var latitude: Double? = nil
         if let latString = json[23] as? NSString {
             latitude = latString.doubleValue
@@ -54,11 +54,11 @@ class Trees: NSObject, MKAnnotation {
         if let latitude = latitude, longitude = longitude, planttype = planttype {
             return Trees(treeid: treeid, planttype: planttype, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
         } else {
-        return nil
+            return nil
         }
         
     }
     
     // pinImage for all pins
-
+    
 }

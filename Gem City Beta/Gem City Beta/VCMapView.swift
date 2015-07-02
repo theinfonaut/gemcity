@@ -10,10 +10,6 @@ import MapKit
 
 extension ViewController: MKMapViewDelegate {
     
-//    consider this update:
-//    didFinishLoading
-//    func mapViewDidFinishLoadingMap(mapView: MKMapView!) {
-//    }
 
     
     // 1
@@ -24,11 +20,11 @@ extension ViewController: MKMapViewDelegate {
 
             if let dequeuedView = theMap.dequeueReusableAnnotationViewWithIdentifier(identifier)
                 as? MKPinAnnotationView {
-    // 2
+                    // 2
                     dequeuedView.annotation = annotation
                     view = dequeuedView
             } else {
-    // 3
+                // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = false
                 view.calloutOffset = CGPoint(x: -5, y: 5)
