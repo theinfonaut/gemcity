@@ -67,7 +67,7 @@
 		616138341B423E51003E124E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		616138361B423E62003E124E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		616138381B423E67003E124E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		619240621B34D2020049EEBF /* Gem City Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gem City Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		619240621B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gem City.temp_caseinsensitive_rename Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619240661B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240671B34D2020049EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6192406A1B34D2020049EEBF /* Gem_City_Beta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gem_City_Beta.xcdatamodel; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		6192406F1B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619240711B34D2020049EEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		619240741B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6192407A1B34D2020049EEBF /* Gem City BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gem City BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gem City.temp_caseinsensitive_rename BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6192407F1B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem_City_BetaTests.swift; sourceTree = "<group>"; };
 		6192408A1B34D2090049EEBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -162,8 +162,8 @@
 		619240631B34D2020049EEBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				619240621B34D2020049EEBF /* Gem City Beta.app */,
-				6192407A1B34D2020049EEBF /* Gem City BetaTests.xctest */,
+				619240621B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta.app */,
+				6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		619240611B34D2020049EEBF /* Gem City Beta */ = {
+		619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City Beta" */;
+			buildConfigurationList = 619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename Beta" */;
 			buildPhases = (
 				6192405E1B34D2020049EEBF /* Sources */,
 				6192405F1B34D2020049EEBF /* Frameworks */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = "Gem City Beta";
+			name = "Gem City.temp_caseinsensitive_rename Beta";
 			productName = "Gem City Beta";
-			productReference = 619240621B34D2020049EEBF /* Gem City Beta.app */;
+			productReference = 619240621B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta.app */;
 			productType = "com.apple.product-type.application";
 		};
-		619240791B34D2020049EEBF /* Gem City BetaTests */ = {
+		619240791B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City BetaTests" */;
+			buildConfigurationList = 619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename BetaTests" */;
 			buildPhases = (
 				619240761B34D2020049EEBF /* Sources */,
 				619240771B34D2020049EEBF /* Frameworks */,
@@ -244,9 +244,9 @@
 			dependencies = (
 				6192407C1B34D2020049EEBF /* PBXTargetDependency */,
 			);
-			name = "Gem City BetaTests";
+			name = "Gem City.temp_caseinsensitive_rename BetaTests";
 			productName = "Gem City BetaTests";
-			productReference = 6192407A1B34D2020049EEBF /* Gem City BetaTests.xctest */;
+			productReference = 6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -273,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6192405D1B34D2020049EEBF /* Build configuration list for PBXProject "Gem City Beta" */;
+			buildConfigurationList = 6192405D1B34D2020049EEBF /* Build configuration list for PBXProject "Gem City" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -286,8 +286,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				619240611B34D2020049EEBF /* Gem City Beta */,
-				619240791B34D2020049EEBF /* Gem City BetaTests */,
+				619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */,
+				619240791B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 /* Begin PBXTargetDependency section */
 		6192407C1B34D2020049EEBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 619240611B34D2020049EEBF /* Gem City Beta */;
+			target = 619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */;
 			targetProxy = 6192407B1B34D2020049EEBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -461,7 +461,7 @@
 				);
 				INFOPLIST_FILE = "Gem City Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename Beta";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -478,7 +478,7 @@
 				);
 				INFOPLIST_FILE = "Gem City Beta/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename Beta";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -497,7 +497,7 @@
 				);
 				INFOPLIST_FILE = "Gem City BetaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename BetaTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gem City Beta.app/Gem City Beta";
 			};
 			name = Debug;
@@ -512,7 +512,7 @@
 				);
 				INFOPLIST_FILE = "Gem City BetaTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename BetaTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gem City Beta.app/Gem City Beta";
 			};
 			name = Release;
@@ -520,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6192405D1B34D2020049EEBF /* Build configuration list for PBXProject "Gem City Beta" */ = {
+		6192405D1B34D2020049EEBF /* Build configuration list for PBXProject "Gem City" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				619240821B34D2020049EEBF /* Debug */,
@@ -529,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City Beta" */ = {
+		619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename Beta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				619240851B34D2020049EEBF /* Debug */,
@@ -538,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City BetaTests" */ = {
+		619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename BetaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				619240881B34D2020049EEBF /* Debug */,
