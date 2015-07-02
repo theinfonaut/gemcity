@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6161381B1B422E33003E124E /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6161381A1B422E33003E124E /* LoginScreenViewController.swift */; };
-		6161381D1B423D24003E124E /* parse-library-1.7.5 in Resources */ = {isa = PBXBuildFile; fileRef = 6161381C1B423D24003E124E /* parse-library-1.7.5 */; };
 		616138211B423DF4003E124E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616138201B423DF4003E124E /* AudioToolbox.framework */; };
 		616138231B423DFA003E124E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616138221B423DFA003E124E /* CFNetwork.framework */; };
 		616138251B423E02003E124E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616138241B423E02003E124E /* CoreGraphics.framework */; };
@@ -28,32 +27,20 @@
 		619240701B34D2020049EEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6192406E1B34D2020049EEBF /* Main.storyboard */; };
 		619240721B34D2020049EEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619240711B34D2020049EEBF /* Images.xcassets */; };
 		619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619240731B34D2020049EEBF /* LaunchScreen.xib */; };
-		619240811B34D2020049EEBF /* Gem_City_BetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */; };
 		6192408B1B34D2090049EEBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6192408A1B34D2090049EEBF /* MapKit.framework */; };
-		619B22081B42423E003F9AEB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22021B42423E003F9AEB /* Bolts.framework */; };
-		619B22091B42423E003F9AEB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22031B42423E003F9AEB /* Parse.framework */; };
-		619B220A1B42423E003F9AEB /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22041B42423E003F9AEB /* ParseCrashReporting.framework */; };
-		619B220B1B42423E003F9AEB /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22051B42423E003F9AEB /* ParseFacebookUtils.framework */; };
-		619B220C1B42423E003F9AEB /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22061B42423E003F9AEB /* ParseFacebookUtilsV4.framework */; };
-		619B220D1B42423E003F9AEB /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619B22071B42423E003F9AEB /* ParseUI.framework */; };
 		DAEBD47C1B38A61A00D67504 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEBD47B1B38A61A00D67504 /* Trees.swift */; };
 		DAEBD47E1B38A8A500D67504 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEBD47D1B38A8A500D67504 /* VCMapView.swift */; };
 		DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */ = {isa = PBXBuildFile; fileRef = DAEBD4811B38EC2F00D67504 /* SFTrees.json */; };
+		FA26849E1B450F6A00B7C236 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2684981B450F6A00B7C236 /* Bolts.framework */; };
+		FA26849F1B450F6A00B7C236 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2684991B450F6A00B7C236 /* Parse.framework */; };
+		FA2684A01B450F6A00B7C236 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26849A1B450F6A00B7C236 /* ParseCrashReporting.framework */; };
+		FA2684A11B450F6A00B7C236 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26849B1B450F6A00B7C236 /* ParseFacebookUtils.framework */; };
+		FA2684A21B450F6A00B7C236 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26849C1B450F6A00B7C236 /* ParseFacebookUtilsV4.framework */; };
+		FA2684A31B450F6A00B7C236 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26849D1B450F6A00B7C236 /* ParseUI.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6192407B1B34D2020049EEBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6192405A1B34D2020049EEBF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 619240611B34D2020049EEBF;
-			remoteInfo = "Gem City Beta";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6161381A1B422E33003E124E /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
-		6161381C1B423D24003E124E /* parse-library-1.7.5 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "parse-library-1.7.5"; path = "../../../parse-library-1.7.5"; sourceTree = "<group>"; };
 		616138201B423DF4003E124E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		616138221B423DFA003E124E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		616138241B423E02003E124E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,19 +62,18 @@
 		6192406F1B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619240711B34D2020049EEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		619240741B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gem City.temp_caseinsensitive_rename BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6192407F1B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem_City_BetaTests.swift; sourceTree = "<group>"; };
 		6192408A1B34D2090049EEBF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		619B22021B42423E003F9AEB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
-		619B22031B42423E003F9AEB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
-		619B22041B42423E003F9AEB /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		619B22051B42423E003F9AEB /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
-		619B22061B42423E003F9AEB /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
-		619B22071B42423E003F9AEB /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
 		DAEBD47B1B38A61A00D67504 /* Trees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
 		DAEBD47D1B38A8A500D67504 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		DAEBD4811B38EC2F00D67504 /* SFTrees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = SFTrees.json; path = "Gem City Beta/SFTrees.json"; sourceTree = "<group>"; };
+		FA2684981B450F6A00B7C236 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FA2684991B450F6A00B7C236 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FA26849A1B450F6A00B7C236 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		FA26849B1B450F6A00B7C236 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		FA26849C1B450F6A00B7C236 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		FA26849D1B450F6A00B7C236 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,27 +87,20 @@
 				616138331B423E48003E124E /* libz.dylib in Frameworks */,
 				616138311B423E3B003E124E /* SystemConfiguration.framework in Frameworks */,
 				6161382F1B423E34003E124E /* StoreKit.framework in Frameworks */,
+				FA26849F1B450F6A00B7C236 /* Parse.framework in Frameworks */,
+				FA26849E1B450F6A00B7C236 /* Bolts.framework in Frameworks */,
 				6161382D1B423E2E003E124E /* Security.framework in Frameworks */,
 				6161382B1B423E26003E124E /* QuartzCore.framework in Frameworks */,
 				616138291B423E19003E124E /* MobileCoreServices.framework in Frameworks */,
 				616138271B423E0C003E124E /* CoreLocation.framework in Frameworks */,
+				FA2684A31B450F6A00B7C236 /* ParseUI.framework in Frameworks */,
 				616138251B423E02003E124E /* CoreGraphics.framework in Frameworks */,
 				616138231B423DFA003E124E /* CFNetwork.framework in Frameworks */,
+				FA2684A11B450F6A00B7C236 /* ParseFacebookUtils.framework in Frameworks */,
 				616138211B423DF4003E124E /* AudioToolbox.framework in Frameworks */,
 				6192408B1B34D2090049EEBF /* MapKit.framework in Frameworks */,
-				619B22081B42423E003F9AEB /* Bolts.framework in Frameworks */,
-				619B22091B42423E003F9AEB /* Parse.framework in Frameworks */,
-				619B220A1B42423E003F9AEB /* ParseCrashReporting.framework in Frameworks */,
-				619B220B1B42423E003F9AEB /* ParseFacebookUtils.framework in Frameworks */,
-				619B220C1B42423E003F9AEB /* ParseFacebookUtilsV4.framework in Frameworks */,
-				619B220D1B42423E003F9AEB /* ParseUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		619240771B34D2020049EEBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FA2684A01B450F6A00B7C236 /* ParseCrashReporting.framework in Frameworks */,
+				FA2684A21B450F6A00B7C236 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,12 +110,12 @@
 		619240591B34D2020049EEBF = {
 			isa = PBXGroup;
 			children = (
-				619B22021B42423E003F9AEB /* Bolts.framework */,
-				619B22031B42423E003F9AEB /* Parse.framework */,
-				619B22041B42423E003F9AEB /* ParseCrashReporting.framework */,
-				619B22051B42423E003F9AEB /* ParseFacebookUtils.framework */,
-				619B22061B42423E003F9AEB /* ParseFacebookUtilsV4.framework */,
-				619B22071B42423E003F9AEB /* ParseUI.framework */,
+				FA2684981B450F6A00B7C236 /* Bolts.framework */,
+				FA2684991B450F6A00B7C236 /* Parse.framework */,
+				FA26849A1B450F6A00B7C236 /* ParseCrashReporting.framework */,
+				FA26849B1B450F6A00B7C236 /* ParseFacebookUtils.framework */,
+				FA26849C1B450F6A00B7C236 /* ParseFacebookUtilsV4.framework */,
+				FA26849D1B450F6A00B7C236 /* ParseUI.framework */,
 				616138381B423E67003E124E /* Social.framework */,
 				616138361B423E62003E124E /* Accounts.framework */,
 				616138341B423E51003E124E /* libsqlite3.dylib */,
@@ -151,7 +130,6 @@
 				616138221B423DFA003E124E /* CFNetwork.framework */,
 				616138201B423DF4003E124E /* AudioToolbox.framework */,
 				DAEBD4811B38EC2F00D67504 /* SFTrees.json */,
-				6161381C1B423D24003E124E /* parse-library-1.7.5 */,
 				6192408A1B34D2090049EEBF /* MapKit.framework */,
 				619240641B34D2020049EEBF /* Gem City */,
 				6192407D1B34D2020049EEBF /* Gem City BetaTests */,
@@ -163,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				619240621B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta.app */,
-				6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */ = {
+		619240611B34D2020049EEBF /* Gem City */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename Beta" */;
+			buildConfigurationList = 619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City" */;
 			buildPhases = (
 				6192405E1B34D2020049EEBF /* Sources */,
 				6192405F1B34D2020049EEBF /* Frameworks */,
@@ -227,28 +204,10 @@
 			);
 			dependencies = (
 			);
-			name = "Gem City.temp_caseinsensitive_rename Beta";
+			name = "Gem City";
 			productName = "Gem City Beta";
 			productReference = 619240621B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta.app */;
 			productType = "com.apple.product-type.application";
-		};
-		619240791B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename BetaTests" */;
-			buildPhases = (
-				619240761B34D2020049EEBF /* Sources */,
-				619240771B34D2020049EEBF /* Frameworks */,
-				619240781B34D2020049EEBF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6192407C1B34D2020049EEBF /* PBXTargetDependency */,
-			);
-			name = "Gem City.temp_caseinsensitive_rename BetaTests";
-			productName = "Gem City BetaTests";
-			productReference = 6192407A1B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,10 +227,6 @@
 							};
 						};
 					};
-					619240791B34D2020049EEBF = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = 619240611B34D2020049EEBF;
-					};
 				};
 			};
 			buildConfigurationList = 6192405D1B34D2020049EEBF /* Build configuration list for PBXProject "Gem City" */;
@@ -287,8 +242,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */,
-				619240791B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename BetaTests */,
+				619240611B34D2020049EEBF /* Gem City */,
 			);
 		};
 /* End PBXProject section */
@@ -300,16 +254,8 @@
 			files = (
 				DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */,
 				619240701B34D2020049EEBF /* Main.storyboard in Resources */,
-				6161381D1B423D24003E124E /* parse-library-1.7.5 in Resources */,
 				619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */,
 				619240721B34D2020049EEBF /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		619240781B34D2020049EEBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,23 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		619240761B34D2020049EEBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				619240811B34D2020049EEBF /* Gem_City_BetaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6192407C1B34D2020049EEBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 619240611B34D2020049EEBF /* Gem City.temp_caseinsensitive_rename Beta */;
-			targetProxy = 6192407B1B34D2020049EEBF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6192406E1B34D2020049EEBF /* Main.storyboard */ = {
@@ -502,40 +432,6 @@
 			};
 			name = Release;
 		};
-		619240881B34D2020049EEBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Gem City BetaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename BetaTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gem City Beta.app/Gem City Beta";
-			};
-			name = Debug;
-		};
-		619240891B34D2020049EEBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Gem City BetaTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "Gem City.temp_caseinsensitive_rename BetaTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gem City Beta.app/Gem City Beta";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,20 +444,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename Beta" */ = {
+		619240841B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				619240851B34D2020049EEBF /* Debug */,
 				619240861B34D2020049EEBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		619240871B34D2020049EEBF /* Build configuration list for PBXNativeTarget "Gem City.temp_caseinsensitive_rename BetaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				619240881B34D2020049EEBF /* Debug */,
-				619240891B34D2020049EEBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

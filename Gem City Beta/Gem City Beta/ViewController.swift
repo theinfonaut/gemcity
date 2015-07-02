@@ -20,9 +20,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     var locationManager = CLLocationManager()
     var alltreesTotal = 0
-    
-    var locationManager = CLLocationManager()
-    var alltreesTotal = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +103,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // 3
         if let jsonObject = jsonObject as? [String: AnyObject] where error == nil {
             // 4
-            let jsonArray = jsonObject["data"] as? [NSArray] {
+            if let jsonArray = jsonObject["data"] as? [NSArray] {
                 //var counter = 0
                 for treesJSON in jsonArray
                 {
