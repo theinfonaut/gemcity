@@ -10,17 +10,21 @@
 
 import UIKit
 import MapKit
-import CoreLocation
+import Parse
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    
+    @IBOutlet weak var score: UILabel!
 
     @IBOutlet weak var theMap: MKMapView!
     
     var locationManager = CLLocationManager()
+    var alltreesTotal = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -32,13 +36,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
        let initialLocation = CLLocation(latitude: 37.7596429, longitude: -122.410573)
         
         centerMapOnLocation(initialLocation)
-        loadInitialData()
         
+        loadInitialData()
         theMap.addAnnotations(alltrees)
         theMap.showsUserLocation = true
         theMap.delegate = self
         theMap.zoomEnabled = false 
-        theMap.scrollEnabled = false 
+        theMap.scrollEnabled = false
+        collectingAnnotations(initialLocation)
        
         
     }
@@ -54,9 +59,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     
     // this method will be call everytime the phone registers a new location
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
+        collectingAnnotations(newLocation)
         
-        var userLocation:CLLocation = locations[0] as! CLLocation
+        var userLocation:CLLocation = newLocation
         
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
@@ -64,7 +70,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         // this sets how zoom in or zoomed out the user will be (1 = zoom out, .001 = zoomed in)
         var latDelta:CLLocationDegrees = 0.002
-        
         var lonDelta:CLLocationDegrees = 0.002
         
         // Span - combination of latdelta and londelta
@@ -79,15 +84,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         // Set the area of map region - self since its inside the fun
         self.theMap.setRegion(region, animated: false)
         
-        self.theMap.showsUserLocation = true
-        
-        println(locations)
+        println(newLocation)
     }
 
     
     
 
-// get tree data from json
+    // get tree data from json
     var alltrees = [Trees]()
     
     func loadInitialData() {
@@ -114,7 +117,43 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     }
                 }
             }
+        
+        }
+    
+    
+    
+    
+    func collectingAnnotations(userLocation: CLLocation) {
+
+        
+        for (var i = 0; i < alltrees.count; i++) {
+            
+            if alltrees[i].hasBeenCollected == false {
+                
+                let currentTreeLocation = CLLocation(latitude: alltrees[i].coordinate.latitude, longitude:
+                    
+                    alltrees[i].coordinate.longitude)
+                
+                if (userLocation.distanceFromLocation(currentTreeLocation) < 50) {
+                    
+                    //MARK  collecting the gem
+                    println("lat: \(alltrees[i].coordinate.latitude) lon: \(alltrees[i].coordinate.longitude)")
+                    println("\(i)")
+                    alltrees[i].hasBeenCollected = true
+                    alltreesTotal += 1
+                }
+                
+                if alltrees[i].hasBeenCollected == true {
+                    theMap.removeAnnotation(alltrees[i])
+                }
+            }
+        }
+        
+        score.text = "\(alltreesTotal)"
     }
+
+    
+    
     
 
     

@@ -1,6 +1,6 @@
 //
 //  Trees.swift
-//  Gem City Beta
+//  Gem City
 //
 //  Created by Leslie Chicoine on 6/22/15.
 //  Copyright (c) 2015 Edrick Pascual. All rights reserved.
@@ -13,20 +13,23 @@ class Trees: NSObject, MKAnnotation {
     let treeid: String
     let planttype: String
     let coordinate: CLLocationCoordinate2D
+    var hasBeenCollected: Bool = false
     
     init(treeid: String, planttype: String, coordinate: CLLocationCoordinate2D) {
         self.treeid = treeid
         self.planttype = planttype
         self.coordinate = coordinate
         
-    super.init()
+        super.init()
     }
     
-
+    //    var subtitle: String {
+    //        return planttype
+    //    }
     
     class func fromJSON(json: NSArray) -> Trees? {
         // 1
-      
+        
         var latitude: Double? = nil
         if let latString = json[23] as? NSString {
             latitude = latString.doubleValue
@@ -51,10 +54,11 @@ class Trees: NSObject, MKAnnotation {
         if let latitude = latitude, longitude = longitude, planttype = planttype {
             return Trees(treeid: treeid, planttype: planttype, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
         } else {
-        return nil
+            return nil
         }
         
     }
-
-
+    
+    // pinImage for all pins
+    
 }
