@@ -111,6 +111,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+//  Add an overlay over the user's current location
+//    
+//    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
+//        if overlay is MKCircle {
+//            var circleRenderer = MKCircleRenderer(overlay: overlay)
+//            circleRenderer.lineWidth = 1.0
+//            circleRenderer.strokeColor = UIColor.purpleColor()
+//            circleRenderer.fillColor = UIColor.purpleColor().colorWithAlphaComponent(0.4)
+//            return circleRenderer
+//        }
+//        return nil
+//    }
+
+    
     func collectingAnnotations(userLocation: CLLocation) {
         //        var userRadius = MKMapRect(origin: MKMapPointForCoordinate(userLocation.coordinate), size: MKMapSize(width: 10000, height: 10000))
         //        let annotations = theMap.annotationsInMapRect(userRadius)
