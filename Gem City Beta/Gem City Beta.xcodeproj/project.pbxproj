@@ -23,12 +23,14 @@
 		28DA59E21B4399FD00A2496E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DA59E11B4399FD00A2496E /* libz.dylib */; };
 		28DA59E41B439A0A00A2496E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28DA59E31B439A0A00A2496E /* libsqlite3.dylib */; };
 		28DA59E61B43A08A00A2496E /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DA59E51B43A08A00A2496E /* LoginScreenViewController.swift */; };
+		28E7E79C1B448B9700F6AE74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28E7E79A1B448B9700F6AE74 /* LaunchScreen.xib */; };
+		28E7E79E1B4496F400F6AE74 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7E79D1B4496F400F6AE74 /* ShareViewController.swift */; };
+		28E7E7A01B44A4B400F6AE74 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7E79F1B44A4B400F6AE74 /* HomeScreenViewController.swift */; };
 		619240681B34D2020049EEBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240671B34D2020049EEBF /* AppDelegate.swift */; };
 		6192406B1B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 619240691B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld */; };
 		6192406D1B34D2020049EEBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192406C1B34D2020049EEBF /* ViewController.swift */; };
 		619240701B34D2020049EEBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6192406E1B34D2020049EEBF /* Main.storyboard */; };
 		619240721B34D2020049EEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619240711B34D2020049EEBF /* Images.xcassets */; };
-		619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619240731B34D2020049EEBF /* LaunchScreen.xib */; };
 		619240811B34D2020049EEBF /* Gem_City_BetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */; };
 		6192408B1B34D2090049EEBF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6192408A1B34D2090049EEBF /* MapKit.framework */; };
 		DAEBD47C1B38A61A00D67504 /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEBD47B1B38A61A00D67504 /* Trees.swift */; };
@@ -63,6 +65,9 @@
 		28DA59E11B4399FD00A2496E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		28DA59E31B439A0A00A2496E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		28DA59E51B43A08A00A2496E /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginScreenViewController.swift; path = "../../../../../Downloads/gemcity-Edrick-Pascual/Gem City Beta/Gem City Beta/LoginScreenViewController.swift"; sourceTree = "<group>"; };
+		28E7E79B1B448B9700F6AE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../../../Downloads/gemcity-leslies-branch/Gem City Beta/Gem City Beta/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		28E7E79D1B4496F400F6AE74 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		28E7E79F1B44A4B400F6AE74 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		619240621B34D2020049EEBF /* Gem City Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gem City Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		619240661B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240671B34D2020049EEBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +75,6 @@
 		6192406C1B34D2020049EEBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6192406F1B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619240711B34D2020049EEBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		619240741B34D2020049EEBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6192407A1B34D2020049EEBF /* Gem City BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gem City BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6192407F1B34D2020049EEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619240801B34D2020049EEBF /* Gem_City_BetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem_City_BetaTests.swift; sourceTree = "<group>"; };
@@ -154,8 +158,10 @@
 				DAEBD47D1B38A8A500D67504 /* VCMapView.swift */,
 				DAEBD47B1B38A61A00D67504 /* Trees.swift */,
 				6192406E1B34D2020049EEBF /* Main.storyboard */,
+				28E7E79F1B44A4B400F6AE74 /* HomeScreenViewController.swift */,
+				28E7E79D1B4496F400F6AE74 /* ShareViewController.swift */,
+				28E7E79A1B448B9700F6AE74 /* LaunchScreen.xib */,
 				619240711B34D2020049EEBF /* Images.xcassets */,
-				619240731B34D2020049EEBF /* LaunchScreen.xib */,
 				619240691B34D2020049EEBF /* Gem_City_Beta.xcdatamodeld */,
 				619240651B34D2020049EEBF /* Supporting Files */,
 			);
@@ -277,9 +283,9 @@
 			files = (
 				DAEBD4821B38EC2F00D67504 /* SFTrees.json in Resources */,
 				619240701B34D2020049EEBF /* Main.storyboard in Resources */,
-				619240751B34D2020049EEBF /* LaunchScreen.xib in Resources */,
 				28B79DE01B3BD783000193D8 /* San_Francisco_Sights.gpx in Resources */,
 				28B79DDE1B3BD70E000193D8 /* TestLocations.gpx in Resources */,
+				28E7E79C1B448B9700F6AE74 /* LaunchScreen.xib in Resources */,
 				619240721B34D2020049EEBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E7E79E1B4496F400F6AE74 /* ShareViewController.swift in Sources */,
+				28E7E7A01B44A4B400F6AE74 /* HomeScreenViewController.swift in Sources */,
 				6192406D1B34D2020049EEBF /* ViewController.swift in Sources */,
 				DAEBD47C1B38A61A00D67504 /* Trees.swift in Sources */,
 				28DA59E61B43A08A00A2496E /* LoginScreenViewController.swift in Sources */,
@@ -326,20 +334,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		28E7E79A1B448B9700F6AE74 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28E7E79B1B448B9700F6AE74 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		6192406E1B34D2020049EEBF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6192406F1B34D2020049EEBF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		619240731B34D2020049EEBF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				619240741B34D2020049EEBF /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

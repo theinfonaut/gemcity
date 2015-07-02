@@ -5,14 +5,18 @@ import Parse
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    @IBOutlet weak var theMap: MKMapView!
     
+    @IBOutlet weak var theMap: MKMapView!
     @IBOutlet weak var score: UILabel!
-    var locationManager = CLLocationManager()
+    @IBAction func close(segue:UIStoryboardSegue) {
+    }
+
+    //Go to users current location
     @IBAction func zoomToCurrentLocation(mapView: MKMapView) {
         zoomToUserLocationInMapView(theMap)
     }
     
+    var locationManager = CLLocationManager()
     var alltreesTotal = 0
     
     
@@ -126,18 +130,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
+        score.text = "\(alltreesTotal)"
+        
+        //Parse Scoring
         var gameScore = PFObject(className: "GameScore")
         gameScore["score"] = alltreesTotal
         gameScore["playerName"] = PFUser.currentUser()?.objectId
         gameScore.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
-                
+                println("Score was saved")
             } else {
-                
+                println("houston we have a problem")
             }
         }
-        score.text = "\(alltreesTotal)"
+        
         
     }
     
